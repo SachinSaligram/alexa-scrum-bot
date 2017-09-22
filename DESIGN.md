@@ -39,7 +39,7 @@ Use Case: Move completed tasks to `Done` column.
   [S1] Bot checks for completed tasks after collecting updates from member.
   [S2] Bot will move the completed tasks to 'Done' board.
 4 Alternative Flows
-  [E1] No tasks are marked 'completed' in the collected updates.
+   [E1] No tasks are marked 'completed' in the collected updates.
   
   ```
 
