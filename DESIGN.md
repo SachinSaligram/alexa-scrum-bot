@@ -72,14 +72,14 @@ We have created a wireframe mockup showing the result of adding a note to an exi
 * This is the initial state of the Agile board.
 ![png](https://github.com/mrnayak/Scrumster/blob/master/images/1-Start-2x.png)
 
-* We will now the result for two different requests.
+* We will now see the results for two different requests.
    * A user request to Scrumster to add a note to a task.
    ![png](https://github.com/mrnayak/Scrumster/blob/master/images/2-Update-2x.png)
    
-   * A user request to Scrumster to move a tast from 'In Progress' to 'Done'.
+   * A user request to Scrumster to move a task from 'In Progress' to 'Done'.
    ![png](https://github.com/mrnayak/Scrumster/blob/master/images/3-Move-2x.png)
   
-To provide an idea of how a these requests are made, we show a simulation of a sample conversation of a user with Scrumster via Alexa (the GIF is approximately 11 seconds long. Please do not assume there is an issue if you do not see any change for a few seconds).
+To provide an idea of how these requests are made, we show a simulation of a sample conversation of a user with Scrumster via Alexa (the GIF is approximately 11 seconds long. Please do not assume there is an issue if you do not see any change for a few seconds).
 
 ![](https://github.com/mrnayak/Scrumster/blob/master/images/Alexa.gif)
 
