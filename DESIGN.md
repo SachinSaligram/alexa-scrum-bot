@@ -36,10 +36,10 @@ Use Case: Move completed tasks to `Done` column.
 2 Main Flow
      After updates are collected by the Scrumster Bot, the Bot will check for completed tasks [S1]. The completed tasks are moved from the current column to the `Done` column on the board [S2]. If no tasks are completed yet, no change is made to the board [E1].
 3 Subflows
-  [S1] Bot checks for completed tasks after collecting updates from member.
-  [S2] Bot will move the completed tasks to 'Done' board.
+    [S1] Bot checks for completed tasks after collecting updates from member.
+    [S2] Bot will move the completed tasks to 'Done' board.
 4 Alternative Flows
-   [E1] No tasks are marked 'completed' in the collected updates.
+    [E1] No tasks are marked 'completed' in the collected updates.
   
   ```
 
