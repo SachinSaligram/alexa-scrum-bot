@@ -13,20 +13,21 @@ Since a lot of meetings take place in Scrum and there are multiple teams within 
 1. Use Case - 1
 
 ```
-Use Case: Ask and collect updates from a team member
+Use Case: Ask and collect updates from a team member 
 1 Preconditions
    User must have access to the Scumster Bot and his/her name listed as members of the JIRA Scrum board. If absent, updates have to be supplied prior to meeting.
 2 Main Flow
-   User will start meeting with Bot and Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present the Scrumster will request user for updates and note them down [S3]. If the user is absent, Scrumster will bring in the stored updates [E1]. 
+   User will start meeting with Bot and Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present the Scrumster will tell the member the tasks assigned to him/her [S3]. User shall give updates on each listed task [S4]. If the team member is absent or on PTO, the Scrumster Bot shall already have this information stored [E1].
 3 Subflows
   [S1] Bot checks for all members on the team having access to the JIRA board.
   [S2] Bot checks if the member is present or absent.
-  [S3] Bot requests the member for his/her updates and notes them down.
+  [S3] Bot lists down the tasks for the particular member.
+  [S4] User has to give his/her updates for the listed tasks by the Bot.
 4 Alternative Flows
   [E1] Team member is absent for the meeting.
 ```
 
-1. Use Case - 2
+2. Use Case - 2
   
   ```
   
@@ -42,6 +43,22 @@ Use Case: Move completed tasks to `Done` column.
     [E1] No tasks are marked 'completed' in the collected updates.
   
   ```
+  
+3. Use Case - 3
+
+```
+Use Case: Sprint Summary and Feedback 
+1 Preconditions
+   User must have access to the Scumster Bot and his/her name listed as members of the JIRA Scrum board. If absent, updates have to be supplied prior to meeting.
+2 Main Flow
+   User will start meeting with Bot and Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present the Scrumster will request user for updates and note them down [S3]. If the user is absent, Scrumster will bring in the stored updates [E1]. 
+3 Subflows
+  [S1] Bot checks for all members on the team having access to the JIRA board.
+  [S2] Bot checks if the member is present or absent.
+  [S3] Bot requests the member for his/her updates and notes them down.
+4 Alternative Flows
+  [E1] Team member is absent for the meeting.
+```
 
 
 ## Design Sketches
