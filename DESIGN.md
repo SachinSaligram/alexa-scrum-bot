@@ -66,6 +66,31 @@ Use Case: Sprint Summary and Feedback
 
 ## Design Sketches
 
+__Wireframes__  
+We have created a wireframe mockup showing the result of adding a note to an existing task and moving a task from 'In Progress' to 'Done'.
+
+* This is the initial state of the Agile board.
+![png](https://github.com/mrnayak/Scrumster/blob/master/images/1-Start-2x.png)
+
+* We will now the result for two different requests.
+   * A user request to Scrumster to add a note to a task.
+   ![png](https://github.com/mrnayak/Scrumster/blob/master/images/2-Update-2x.png)
+   
+   * A user request to Scrumster to move a tast from 'In Progress' to 'Done'.
+   ![png](https://github.com/mrnayak/Scrumster/blob/master/images/3-Move-2x.png)
+  
+To provide an idea of how a these requests are made, we show a simulation of a sample conversation of a user with Scrumster via Alexa (the GIF is approximately 11 seconds long. Please do not assume there is an issue if you do not see any change for a few seconds).
+
+![](https://github.com/mrnayak/Scrumster/blob/master/images/Alexa.gif)
+
+__Storyboard__  
+Our storyboard is a sequence of illustrations that provide an understanding of how our bot, Scrumster, will take voice inputs from the user via Alexa and make changes to a JIRA Agile board. We have provided two scenarios.
+1. A user providing an update to an exisiting task.
+2. A user moving a task from 'In Progress' to 'Done'.
+
+![png](https://github.com/mrnayak/Scrumster/blob/master/images/scrumsters-highres-3.png)
+
+
 ## Architecture Design
 The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service.
 
