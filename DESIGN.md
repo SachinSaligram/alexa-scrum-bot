@@ -29,17 +29,16 @@ Use Case: Ask and collect updates from a team member
 1. Use Case - 2
 
 ```
-Use Case: Move completed tasks to Done column.
+Use Case: Move completed tasks to `Done` column.
 1 Preconditions
    User must have access to the Scumster Bot and his/her name listed as members of the JIRA Scrum board. 
 2 Main Flow
-   User will start meeting with Bot and Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present the Scrumster will request user for updates and note them down [S3]. If the user is absent, Scrumster will bring in the stored updates [E1]. 
+   After updates are collected by the Scrumster Bot, the Bot will check for completed tasks [S1]. The completed tasks are moved from the current column to the `Done` column on the board [S2]. If no tasks are completed yet, no change is made to the board [E1].
 3 Subflows
-  [S1] Bot checks for all members on the team having access to the JIRA board.
-  [S2] Bot checks if the member is present or absent.
-  [S3] Bot requests the member for his/her updates and notes them down.
+  [S1] Bot checks for completed tasks after collecting updates from member.
+  [S2] Bot will move the completed tasks to 'Done' board.
 4 Alternative Flows
-  [E1] Team member is absent for the meeting.
+  [E1] No tasks are marked 'completed' in the collected updates.
 ```
 ## Design Sketches
 
