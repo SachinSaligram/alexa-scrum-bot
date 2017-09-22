@@ -26,6 +26,21 @@ Use Case: Ask and collect updates from a team member
   [E1] Team member is absent for the meeting.
 ```
 
+1. Use Case - 2
+
+```
+Use Case: Move completed tasks to Done column.
+1 Preconditions
+   User must have access to the Scumster Bot and his/her name listed as members of the JIRA Scrum board. 
+2 Main Flow
+   User will start meeting with Bot and Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present the Scrumster will request user for updates and note them down [S3]. If the user is absent, Scrumster will bring in the stored updates [E1]. 
+3 Subflows
+  [S1] Bot checks for all members on the team having access to the JIRA board.
+  [S2] Bot checks if the member is present or absent.
+  [S3] Bot requests the member for his/her updates and notes them down.
+4 Alternative Flows
+  [E1] Team member is absent for the meeting.
+```
 ## Design Sketches
 
 ## Architecture Design
