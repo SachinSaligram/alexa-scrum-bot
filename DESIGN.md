@@ -92,8 +92,60 @@ Our storyboard is a sequence of illustrations that provide an understanding of h
 
 
 ## Architecture Design
+![png](https://github.com/mrnayak/Scrumster/blob/master/images/Architecture-diagram.PNG)
+
 The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service.
 
 The Alexa application acts as the interaction medium between Human and bot , to collect the voice input from the Engineer and give voice feedback regarding the Scrum. The Central platfrom hosted on AWS would be linked to both the Alexa application and the JIRA page. Its main purpose is to queue the requests being made to JIRA, to run as a background task to contain the latency experienced at the Alexa voice interface. This reduction in latency would ensure a better User Experience, thereby making the 'stand-up' portion of the functionality more real-time. The central platform can also be used to provide a dashboard for statistics, which would be made available to the person monitoring Scrum progress. 
 
 A hosted JIRA/Trello service is used, as opposed to setting up a server and maintaining it ourselves. This is a design option made to simplify infrastructure maintanence and focus on realizing Bot functionality. The requests made at the Alexa application would translate into JIRA/Trello API calls to realize functionality as defined by our use cases.
+
+__Design Patterns__
+* **Event driven programming**: A programming paradaign where flow of programs is determined by the events. In our application, the user starts the Scrumster service and issues a request when prompted by the service. To achieve this efficiently we are using AWS Lambda which is a event driven serverless computing platform provided by Amazon.
+
+```javascript
+'use strict';
+
+const Alexa = require('alexa-sdk');
+
+const APP_ID = '';  
+const HELP_MESSAGE = 'Welcome to Scrumster help';
+const STOP_MESSAGE = 'Thanks for using Scrumster';
+
+const handlers = {
+    'LaunchRequest': function () {
+        this.emit('Start');
+    },
+
+    'Start': function () {
+
+        // Create speech output
+        this.emit(':tellWithCard', speechOutput, 'Welcome,', 'Scrumster has started');
+    },
+    'AMAZON.HelpIntent': function () {
+        const speechOutput = this.t('HELP_MESSAGE');
+        const reprompt = this.t('HELP_MESSAGE');
+        this.emit(':ask', speechOutput, reprompt);
+    },
+    'AMAZON.CancelIntent': function () {
+        this.emit(':tell', this.t('STOP_MESSAGE'));
+    },
+    'AMAZON.StopIntent': function () {
+        this.emit(':tell', this.t('STOP_MESSAGE'));
+    },
+};
+
+exports.handler = function (event, context) {
+    const alexa = Alexa.handler(event, context);
+    alexa.APP_ID = APP_ID;
+    // To enable string internationalization (i18n) features, set a resources object.
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
+```
+The above code is the AWS Lambda function for the Scrumster service (an Amazon Alexa skill). The application executes the 'Start' function at launch, achieved by calling Alexa via voice. This is a skeleton structure that will be updated with additional functions.
+
+* REST API: We are integrating the Scrumster service (Amazon Alexa skill) with the JIRA API allowing the user to make requests by invoking the Scrumster service using Amazon Alexa.
+
+__Constraints or Guidlines__
+* User identification: Restriction in Amazon Alexa functionality prevents a user voice from being identified uniquely. This forces users to provide unique identification.
