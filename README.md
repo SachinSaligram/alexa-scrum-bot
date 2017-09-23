@@ -2,6 +2,12 @@
 
 ### Scrumster
 
+__Team Members (Unity Id)__
+* Raghavendra Nayak Muddur (rmuddur)
+* Kshitija Murudi (kmurudi)
+* Vishal Kumar Sheshagiri Rao (vseshag)
+* Sachin Saligram (ssaligr)
+
 This milestone provides a design proposal describing the functionality and architecture of our proposed bot, Scrumster. The proposal covers the following requirements.
 
 * Problem Statement
