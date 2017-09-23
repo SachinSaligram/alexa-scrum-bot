@@ -92,7 +92,7 @@ Our storyboard is a sequence of illustrations that provide an understanding of h
 
 
 ## Architecture Design
-![png](https://github.com/mrnayak/Scrumster/blob/master/images/Architecture-diagram.PNG)
+![png](https://github.com/mrnayak/Scrumster/blob/master/images/Architecture-diagram.png)
 
 The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service.
 
