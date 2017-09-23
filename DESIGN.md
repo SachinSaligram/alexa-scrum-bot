@@ -1,4 +1,4 @@
-### DESIGN MILESTONE ###
+# DESIGN MILESTONE #
 
 ## Problem Statement
 
@@ -145,7 +145,7 @@ exports.handler = function (event, context) {
 ```
 The above code is the AWS Lambda function for the Scrumster service (an Amazon Alexa skill). The application executes the 'Start' function at launch, achieved by calling Alexa via voice. This is a skeleton structure that will be updated with additional functions.
 
-* REST API: We are integrating the Scrumster service (Amazon Alexa skill) with the JIRA API allowing the user to make requests by invoking the Scrumster service using Amazon Alexa.
+* REST API: We are integrating the Scrumster service (Amazon Alexa skill) with JIRA API allowing users to make requests by invoking the Scrumster service using Amazon Alexa.
 
 __Constraints or Guidlines__
 * User identification: Restriction in Amazon Alexa functionality prevents a user voice from being identified uniquely. This forces users to provide unique identification.
