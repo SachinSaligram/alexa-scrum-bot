@@ -2,7 +2,7 @@
 
 ### Scrumster
 
-This milestone provides a design proposal describing the functionality and architecture of the our proposed bot, Scrumster. The proposal covers the following requirements.
+This milestone provides a design proposal describing the functionality and architecture of our proposed bot, Scrumster. The proposal covers the following requirements.
 
 * Problem Statement
 * Bot Description
