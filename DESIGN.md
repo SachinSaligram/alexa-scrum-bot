@@ -8,7 +8,7 @@ Since a lot of meetings take place in Scrum and there are multiple teams within 
 
 ## Bot Description
 
-Scrumster is a Bot designed to serve as an advocate of Scrum . The end goal would be to replace one of the existing Scrum roles (ScrumMaster in particular), but at the level of implemetation we are focusing on, we would want the bot to be a catalyst for the overall Scrum process within teams in an organization. Most of us who have experience working in Scrum teams find it to be a laborious task, to update Kanban boards and add details to these updates. This is one of the problems Scrumster looks to solve by automating the process of updating tasks by having a simple voice interaction through an Alexa application, with the Engineers during the stand-up to update tasks pertaining to the sprint. At the back end, it is tied to JIRA/Trello APIs to acheive this task.
+Scrumster is a Bot designed to serve as an advocate of Scrum. The end goal would be to replace one of the existing Scrum roles (ScrumMaster in particular), but at the level of implemetation we are focusing on, we would want the bot to be a catalyst for the overall Scrum process within teams in an organization. Most of us who have experience working in Scrum teams find it to be a laborious task, to update Kanban boards and add details to these updates. This is one of the problems Scrumster looks to solve by automating the process of updating tasks by having a simple voice interaction through an Alexa application, with the Engineers during the stand-up to update tasks pertaining to the sprint. At the back end, it is tied to JIRA/Trello APIs to acheive this task.
 
 In addition to collecting information regarding a particular task, it also assists in moving tasks from one state to another (for eg. from 'In-progess' to 'Completed') which further eases the life of an engineer. Lastly, Scrumster also provides the functionality of summarizing the sprint up to that point and providing feedback as to whether the sprint is on track or not. 
 
@@ -21,7 +21,7 @@ Use Case: Collect updates from team members and update the JIRA board
 1 Preconditions
    User must have access to the Scumster Bot and his/her name listed as member of the JIRA Scrum team. If absent for a particular stand-up, updates have to be supplied prior to meeting in the Application.
 2 Main Flow
-   User initiates meeting with Bot by introducing him/herself. Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present Scrumster will tell the member the tasks assigned to him/her [S3]. User shall give updates on each listed task [S4]. If the team member is absent or on PTO, the Scrumster Bot shall already have this information collected through the centralized portal [E1].
+   User triggers the Scrumster application using a key phrase such as "Hey Scrumster". User initiates meeting with Bot by introducing him/herself. Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present Scrumster will tell the member the tasks assigned to him/her [S3]. User shall give updates on each listed task [S4]. If the team member is absent or on PTO, the Scrumster Bot shall already have this information collected through the centralized portal [E1].
 3 Subflows
   [S1] Bot checks for all members on the team having access to the JIRA board.
   [S2] Bot checks if the member is present or absent.
@@ -94,7 +94,7 @@ Our storyboard is a sequence of illustrations that provide an understanding of h
 ## Architecture Design
 ![png](images/Architecture-diagram.png)
 
-The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service.
+The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that Amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service.
 
 The Alexa application acts as the interaction medium between Human and bot , to collect the voice input from the Engineer and give voice feedback regarding the Scrum. The Central platfrom hosted on AWS would be linked to both the Alexa application and the JIRA page. Its main purpose is to queue the requests being made to JIRA, to run as a background task to contain the latency experienced at the Alexa voice interface. This reduction in latency would ensure a better User Experience, thereby making the 'stand-up' portion of the functionality more real-time. The central platform can also be used to provide a dashboard for statistics, which would be made available to the person monitoring Scrum progress. 
 
