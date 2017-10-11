@@ -8,9 +8,15 @@ Since a lot of meetings take place in Scrum and there are multiple teams within 
 
 ## Bot Description
 
-Scrumster is a Bot designed to serve as an advocate of Scrum. The end goal would be to replace one of the existing Scrum roles (ScrumMaster in particular), but at the level of implemetation we are focusing on, we would want the bot to be a catalyst for the overall Scrum process within teams in an organization. Most of us who have experience working in Scrum teams find it to be a laborious task, to update Kanban boards and add details to these updates. This is one of the problems Scrumster looks to solve by automating the process of updating tasks by having a simple voice interaction through an Alexa application, with the Engineers during the stand-up to update tasks pertaining to the sprint. At the back end, it is tied to JIRA/Trello APIs to acheive this task.
+Scrumster is a Bot designed to serve as an advocate of Scrum. The end goal would be to replace one of the existing Scrum roles (Scrum Master in particular), but at the level of implemetation we are focusing on, we would want the bot to be a catalyst for the overall Scrum process within teams in an organization. Most of us who have experience working in Scrum teams find it to be a laborious task, to update Kanban boards and add details to these updates. This is one of the problems Scrumster looks to solve by automating the process of updating tasks by having a simple voice interaction through an Alexa application, with the Engineers during the stand-up to update tasks pertaining to the sprint. At the back end, it is tied to JIRA/Trello APIs to acheive this task.
 
 In addition to collecting information regarding a particular task, it also assists in moving tasks from one state to another (for eg. from 'In-progess' to 'Completed') which further eases the life of an engineer. Lastly, Scrumster also provides the functionality of summarizing the sprint up to that point and providing feedback as to whether the sprint is on track or not. 
+
+### Description of how/when/where Alexa is used in the Bot
+
+The Scrumster bot would be used during a stand-up meeting and will make use of Alexa as a medium for verbal interaction with the team members. Initially the team member would have to trigger the application using a key-phrase such as "Hey Scrumster, this is xyz", at which point of time the bot (Assuming that it is already configured for a particular Scrum team) would list out the list of tasks in the pending and in-progress states for that team member and ask for an update. It would first ask for updates (add notes) on the in-progress tasks and make them reflect on the JIRA/Trello dashboards. Once this is done, it would ask if the state of any of the pending tasks have to be changed. Alexa would list them again for the benefit of the team member. Once all tasks have been updated for a specific team member, Alexa's state is reset and the next team member would start off again with the trigger. 
+
+Alexa would be integrated with AWS Lambda functions to process voice input and convert it into data which would serve as input to the JIRA/Trello APIs.  
 
 ## Use Cases
 
