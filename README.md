@@ -8,6 +8,12 @@ __Team Members (Unity Id)__
 * Vishal Kumar Sheshagirirao Anil (vseshag)
 * Sachin Saligram (ssaligr)
 
+### Changes made after feedback received on Milestone-1 ->
+
+* Explain where,how & when Alexa is used
+* Simplify the voice interaction with Bot to limit possibility of failure
+
+
 This milestone provides a design proposal describing the functionality and architecture of our proposed bot, Scrumster. The proposal covers the following requirements.
 
 * Problem Statement
@@ -18,3 +24,5 @@ This milestone provides a design proposal describing the functionality and archi
 * Additional Patterns
 
 The design proposal can be viewed by clicking [here](https://github.com/mrnayak/Scrumster/blob/master/DESIGN.md).
+
+
