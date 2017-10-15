@@ -21,53 +21,55 @@ Alexa would be integrated with AWS Lambda functions to process voice input and c
 ## Use Cases
 
 1. Use Case - 1
-
-```
-Use Case: Collect updates from team members and update the JIRA board  
-1 Preconditions
-   User must have access to the Scumster Bot and his/her name listed as member of the JIRA Scrum team. If absent for a particular stand-up, updates have to be supplied prior to meeting in the Application.
-2 Main Flow
-   User triggers the Scrumster application using a key phrase such as "Hey Scrumster". User initiates meeting with Bot by introducing him/herself. Bot starts by looking for each member's name on the Team list [S1]. It then checks if the member is present or absent in the scheduled meeting [S2]. If present Scrumster will tell the member the tasks assigned to him/her [S3]. User shall give updates on each listed task [S4]. If the team member is absent or on PTO, the Scrumster Bot shall already have this information collected through the centralized portal [E1].
-3 Subflows
-  [S1] Bot checks for all members on the team having access to the JIRA board.
-  [S2] Bot checks if the member is present or absent.
-  [S3] Bot lists down the tasks for the particular member.
-  [S4] User has to give his/her updates for the listed tasks by the Bot.
-4 Alternative Flows
-  [E1] Team member is absent for the meeting.
-```
-
-2. Use Case - 2
   
   ```
   
-Use Case: Move tasks from one state to another.
+Use Case: Move tasks from one state to another as per user input.
 1 Preconditions
-     User must have access to the Scumster Bot and his/her name must be listed as members of the JIRA Scrum team. 
+     User must have access to the Scumster Bot and his/her name must be listed as members of the JIRA Scrum team. The Scrum has to be triggered to be started, user will do this by using a key phrase like "Hey Scrumster". 
 2 Main Flow
-     After updates are collected by the Scrumster Bot, the Bot will check for completed tasks [S1]. The completed tasks are moved from the 'In-progress' column to the `Completed` column on the board [S2]. If no tasks are completed yet, no change is made to the board [E1].
+     After the user starts the Scrumster, the users can give instructions to Scrumster Bot [S1] to move tasks by mentioning the task ID that will be recognized by the Bot[S2]. The user can ask Scrumster to move from any of the valid states. Example - user says "Move task AT-10 to 'Done'/'Completed' column. 
+     
 3 Subflows
-    [S1] Bot checks for completed tasks after collecting updates from member.
-    [S2] Bot will move the completed tasks to 'Done' board.
+    [S1] User gives Bot instructions to move tasks by calling out task IDs.
+    [S2] Bot will move the tasks by recognizing the task ID.
 4 Alternative Flows
     [E1] No tasks make transition from one state to the other in the collected updates.
   
   ```
   
-3. Use Case - 3
+2. Use Case - 2
 
 ```
 Use Case: Sprint Summary and Feedback 
 1 Preconditions
-   Scrumster Bot should have finished with all the team members' updates.
+   Scrumster Bot should have finished with all the team members' updates. 
 2 Main Flow
-   At the end of the meeting, Scrum Bot will analyze the Scrum Board and talk about the progress of the team. Bot will review performance of the team and see if target will be met or not. 
+   At the end of the stand-up meeting, one of the users will use a key-phrase such as "Scrumster, End the meeting" to indicate that the team has finished giving updates and tasks are done moving[S1]. Scrum Bot will analyze the Scrum Board and talk about the progress of the team[S2]. Bot will review performance of the team and comment on current progress v/s previous sprint performance[S3]. 
 3 Subflows
-  [S1] Bot checks if all members on the team have finished with their updates or not.
-  [S2] Bot will analyze the Scrum board(JIRA/Trello) for number of tasks completed before due date and number of tasks still in progress after due date has expired.
-  [S3] Talk about overall performance of the team and how far the team is from the goal.
+  [S1] Bot gets input from user to end the current meeting.
+  [S2] Bot will analyze the Scrum board(JIRA/Trello) for tracking the team's overall progress.
+  [S3] Talk about overall performance of the team and comparison with past sprint performance.
   
 ```
+
+3. Use Case - 3
+
+```
+Use Case: Schedule a meeting for the team.
+1 Preconditions
+   All users must have access to Scrum Board.    
+2 Main Flow
+   One of the users gives speech instruction to Scrumster Bot to schedule a meeting indicating the duration of meeting (we will support only 30mins/1hour meeting slots) [S1]. This will be done for the entire team. Bot checks the calendars of all the team members and schedule a team meeting [S2]. Sends out a notification about the meeting timings [S3]. If no timings match for all the team members, Bot will notify that meeting cannot be scheduled [E1].
+3 Subflows
+  [S1] User asks Scrumster to schedule a team meeting.
+  [S2] Bot checks calendars of all the team members.
+  [S3] Bot gives back an update to team mentioning the meeting slot.
+ 
+4 Alternative Flows
+  [E1] No timings matching for team members.
+```
+
 
 
 ## Design Sketches
@@ -98,11 +100,11 @@ Our storyboard is a sequence of illustrations that provide an understanding of h
 
 
 ## Architecture Design
-![png](images/architecture_diagram.png)
+![png](images/Architecture-diagram.png)
 
 The Architecture consists of essentially 3 components. The Alexa application or a simulator, which can be invoked using Lambda functions that Amazon provides, a central platform hosted on a cloud provider like AWS which would be developed to act as the repository for all the activties that Scrumster carries out, and a hosted JIRA/Trello service. Alexa would not be used for all the human interactions, but only to take updates and move the tasks on the board. 
 
-The Alexa application acts as the interaction medium between Human and bot , to collect the voice input from the Engineer and give voice feedback regarding the Scrum. The Central platfrom hosted on AWS would be linked to both the Alexa application and the JIRA page. Its main purpose is to queue the requests being made to JIRA, to run as a background task to contain the latency experienced at the Alexa voice interface. This reduction in latency would ensure a better User Experience, thereby making the 'stand-up' portion of the functionality more real-time. The central platform can also be used to provide a dashboard for statistics, which would be made available to the person monitoring Scrum progress. The Central platform will also provide integration with Google calendar, this would allow Alexa to schedule team meetings. 
+The Alexa application acts as the interaction medium between Human and bot , to collect the voice input from the Engineer and give voice feedback regarding the Scrum. The Central platfrom hosted on AWS would be linked to both the Alexa application and the JIRA page. Its main purpose is to queue the requests being made to JIRA, to run as a background task to contain the latency experienced at the Alexa voice interface. This reduction in latency would ensure a better User Experience, thereby making the 'stand-up' portion of the functionality more real-time. The central platform can also be used to provide a dashboard for statistics, which would be made available to the person monitoring Scrum progress. 
 
 A hosted JIRA/Trello service is used, as opposed to setting up a server and maintaining it ourselves. This is a design option made to simplify infrastructure maintanence and focus on realizing Bot functionality. The requests made at the Alexa application would translate into JIRA/Trello API calls to realize functionality as defined by our use cases.
 
