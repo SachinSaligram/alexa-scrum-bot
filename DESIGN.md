@@ -96,7 +96,7 @@ Our storyboard is a sequence of illustrations that provide an understanding of h
 1. A user providing an update to an exisiting task.
 2. A user moving a task from 'In Progress' to 'Done'.
 
-![png](images/scrumsters-highres-3.png)
+![png](images/scrumster-2-0-highres.png)
 
 
 ## Architecture Design
