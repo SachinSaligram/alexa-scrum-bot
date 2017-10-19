@@ -5,7 +5,7 @@
 __Team Members (Unity Id)__
 * Raghavendra Nayak Muddur (rmuddur)
 * Kshitija Murudi (kmurudi)
-* Vishal Kumar Sheshagirirao Anil (vseshag)
+* Vishal Kumar Seshagirirao Anil (vseshag)
 * Sachin Saligram (ssaligr)
 
 ### Changes made after feedback received on Milestone-1 ->
