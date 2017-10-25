@@ -9,7 +9,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Modify Bot Description      | Done             | [SD-26](https://scrumster.atlassian.net/browse/SD-26)
 | Change Use Case 2     | Done             |  [SD-27](https://scrumster.atlassian.net/browse/SD-27)
 | Change Use Case 3     | Done             |  [SD-28](https://scrumster.atlassian.net/browse/SD-28)
-| Simplify Interaction      | Done             |  Put Image for new storyboard
+| Simplify Interaction      | Done             |  [Updated Storyboard](https://github.ncsu.edu/rmuddur/Scrumster/images/scrumster-2-0-highres.png)
 
 ##### Week 2
 
