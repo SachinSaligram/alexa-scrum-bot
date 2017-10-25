@@ -15,7 +15,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case      | Move tasks from one state to another          | &nbsp;
+| Use Case 1     | Move tasks from one state to another          | &nbsp;
 | Subflow S1    | Done             |  Give JIRA links
 | Subflow S2     | Done            |  Give JIRA links
 | Alternative flow E1     | Done             | Give JIRA links
@@ -23,7 +23,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case      | Sprint Summary and Feedback          | &nbsp;
+| Use Case 2     | Sprint Summary and Feedback          | &nbsp;
 | Subflow S1     | Done             | Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
@@ -32,7 +32,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case      | Schedule a meeting for the team          | &nbsp;
+| Use Case 3     | Schedule a meeting for the team          | &nbsp;
 | Subflow S1     | Done             |  Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
