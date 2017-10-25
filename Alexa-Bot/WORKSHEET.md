@@ -15,7 +15,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 1     | Move tasks from one state to another          | [Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30)
+| Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30)
 | Subflow S1    | Done             |  Give JIRA links
 | Subflow S2     | Done            |  Give JIRA links
 | Alternative flow E1     | Done             | Give JIRA links
