@@ -29,7 +29,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Subflow S1     | Done             | Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
-| Selenium Testing      | Done             |  []()
+| Selenium Testing      | Done             |  [SD-34](https://scrumster.atlassian.net/browse/SD-34)
 
 ##### Week 4
 
@@ -40,4 +40,4 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
 | Alternative flow E1| Done    | Give JIRA links
-| Selenium Testing      | Done             |  Give JIRA links
+| Selenium Testing      | Done             |  [SD-35](https://scrumster.atlassian.net/browse/SD-35)
