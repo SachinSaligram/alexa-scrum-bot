@@ -5,10 +5,10 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case Refinement      | Done          | Story link
-| Modify Bot Description      | Done             | Give JIRA link
-| Change Use Case 2     | Done             |  Give JIRA link/ Paste new use case
-| Change Use Case 3     | Done             |  Give JIRA link/ Paste new use case
+| Use Case Refinement      | Done          | [Link to Story: Use case refinement](https://scrumster.atlassian.net/browse/SD-25)
+| Modify Bot Description      | Done             | [SD-26](https://scrumster.atlassian.net/browse/SD-26)
+| Change Use Case 2     | Done             |  [SD-27](https://scrumster.atlassian.net/browse/SD-27)
+| Change Use Case 3     | Done             |  [SD-28](https://scrumster.atlassian.net/browse/SD-28)
 | Simplify Interaction      | Done             |  Put Image for new storyboard
 
 ##### Week 2
@@ -25,7 +25,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 2     | Sprint Summary and Feedback          | Story link
+| Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31)
 | Subflow S1     | Done             | Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
@@ -35,7 +35,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 3     | Schedule a meeting for the team          | Story link
+| Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32)
 | Subflow S1     | Done             |  Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
