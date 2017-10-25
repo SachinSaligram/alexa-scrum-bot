@@ -8,7 +8,7 @@ Scrumster is a bot designed to serve as an advocate of Scrum. The end goal would
 * Schedule meetings for a duration of 30 minutes or 1 hour when all team members are available. This is achieved by accessing their calendars via the Google Calendar API.
 * Summarize the sprint up to that point and provide feedback as to whether the sprint is on track or not.
 
-## Use Cases
+#### Use Cases
 
 1. Use Case - 1
   
@@ -59,6 +59,12 @@ Use Case: Schedule a meeting for the team.
 4 Alternative Flows
   [E1] No timings matching for team members.
 ```
+### Mocking Service Component
+
+### Bot Implementation
+
+### Selenium Testing
+#### Pre-requisites and environment setup
 
 ### Task Tracking
 
