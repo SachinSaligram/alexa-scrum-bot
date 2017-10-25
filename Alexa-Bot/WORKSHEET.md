@@ -19,6 +19,8 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Subflow S1    | Done             |  Give JIRA links
 | Subflow S2     | Done            |  Give JIRA links
 | Alternative flow E1     | Done             | Give JIRA links
+| Selenium Testing      | Done             |  Give JIRA links
+
 ##### Week 3
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
@@ -27,6 +29,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Subflow S1     | Done             | Give JIRA links
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
+| Selenium Testing      | Done             |  Give JIRA links
 
 ##### Week 4
 
@@ -37,3 +40,4 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Subflow S2     | Done             |  Give JIRA links
 | Subflow S3     | Done             |  Give JIRA links
 | Alternative flow E1| Done    | Give JIRA links
+| Selenium Testing      | Done             |  Give JIRA links
