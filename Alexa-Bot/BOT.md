@@ -214,4 +214,10 @@ The Worksheet for Milestone 2 (BOT) can be found here: [Worksheet](https://githu
 
 ### Screencast
 
-The following is the link to our screencast: 
+The following are the links to our screencast: 
+
+[Demo1- Text i/p o/p](https://youtu.be/z-fNjAiUzsw)
+
+[Demo2- Voice i/p o/p]
+
+
