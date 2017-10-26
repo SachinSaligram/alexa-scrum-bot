@@ -15,7 +15,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30)
+| Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30), [Design-SD-36](https://scrumster.atlassian.net/browse/SD-36)
 | Subflow S1    | Done             |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
 | Subflow S2     | Done            |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
 | Alternative flow E1     | Done             | [SD-41](https://scrumster.atlassian.net/browse/SD-41)
@@ -25,7 +25,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31)
+| Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31),[Design SD-37](https://scrumster.atlassian.net/browse/SD-37)
 | Subflow S1     | Done             | [SD-39](https://scrumster.atlassian.net/browse/SD-39)
 | Subflow S2     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
 | Subflow S3     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
@@ -35,7 +35,7 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32)
+| Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32),[Design SD-38](https://scrumster.atlassian.net/browse/SD-38)
 | Subflow S1     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
 | Subflow S2     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
 | Subflow S3     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
