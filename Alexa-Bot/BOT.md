@@ -1,5 +1,11 @@
 ## BOT Milestone phase
 
+__Team Members (Unity Id) and Contributions__
+* Raghavendra Nayak Muddur (rmuddur): Java code implementation for usecases
+* Kshitija Murudi (kmurudi): Mocking Service Component, Use Case Refinement
+* Vishal Kumar Seshagirirao Anil (vseshag): Task and JIRA scrum board Tracking , Design of Usecase implementation and interactions, BOT.md documentation
+* Sachin Saligram (ssaligr): Intent scheme creation, Infrastructure setup, Selenium Testing
+
 ### Use Case Refinement
 #### Refined BOT Description
 Scrumster is a bot designed to serve as an advocate of Scrum. The end goal would be to replace one of the existing Scrum roles (scrum master in particular), but at the level of implemetation we are focusing on, we would want the bot to be a catalyst for the overall Scrum process within teams in an organization. Most of us who have experience working in Scrum teams find updating Kanban boards to be a laborious task. Scrumster looks to aid in the process of updating tasks by having a simple voice interaction, through an Alexa application, with engineers during a stand-up to update tasks pertaining to a sprint. At the back end, it is tied to JIRA/Trello APIs to acheive this task. Scrumster aims to provide the following functionality:
@@ -176,15 +182,18 @@ Every implementation of an Amazon Alexa application has an intent scheme.The int
 ```
 
 #### Bot Integration
-The bot has been full integrated for the 3 use cases defined with all possible input/output combinations through voice and text as illustrated in the screencast. One good path is as shown below for the 3 use cases: 
+The bot has been full integrated for the 3 use cases defined with all possible input/output combinations through voice and text as illustrated in the screencast. An example of the good path is as shown below for the 3 use cases: 
 ##### UseCase1:
 I/p: Ask Scrumster Move Task 20 to Done
+
 O/p: Your task has been successfully moved to done 
 ##### UseCase2:
 I/p: Ask Scrumster to End stand-up
+
 O/p: Your team has burnt 12 points and is on track
 ##### UseCase3:
 I/p: Ask Scrumster schedule meeting today
+
 O/p: Meeting Scheduled for October 25th at 2:30 PM
 
 We have used mocked data for the JIRA/Trello board updates and reads for now. In the next phase the bot would read from JIRA APIs to fetch sprint summaries and update tasks from one state to the other. It would also look up google calender data instead of mocked data for team availability to schedule a meeting. 
