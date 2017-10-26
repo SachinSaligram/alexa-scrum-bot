@@ -16,9 +16,9 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
 | Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30)
-| Subflow S1    | Done             |  Give JIRA links
-| Subflow S2     | Done            |  Give JIRA links
-| Alternative flow E1     | Done             | Give JIRA links
+| Subflow S1    | Done             |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
+| Subflow S2     | Done            |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
+| Alternative flow E1     | Done             | [SD-41](https://scrumster.atlassian.net/browse/SD-41)
 | Selenium Testing      | In Progress             | [SD-33](https://scrumster.atlassian.net/browse/SD-33)
 
 ##### Week 3
@@ -26,9 +26,9 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
 | Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31)
-| Subflow S1     | Done             | Give JIRA links
-| Subflow S2     | Done             |  Give JIRA links
-| Subflow S3     | Done             |  Give JIRA links
+| Subflow S1     | Done             | [SD-39](https://scrumster.atlassian.net/browse/SD-39)
+| Subflow S2     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
+| Subflow S3     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
 | Selenium Testing      | In Progress             |  [SD-34](https://scrumster.atlassian.net/browse/SD-34)
 
 ##### Week 4
@@ -36,8 +36,8 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
 | Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32)
-| Subflow S1     | Done             |  Give JIRA links
-| Subflow S2     | Done             |  Give JIRA links
-| Subflow S3     | Done             |  Give JIRA links
-| Alternative flow E1| Done    | Give JIRA links
+| Subflow S1     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
+| Subflow S2     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
+| Subflow S3     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
+| Alternative flow E1| Done    | [SD-42](https://scrumster.atlassian.net/browse/SD-42)
 | Selenium Testing      | In Progress             |  [SD-35](https://scrumster.atlassian.net/browse/SD-35)
