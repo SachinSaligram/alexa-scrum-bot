@@ -15,29 +15,29 @@ The Worksheet is broken down into 4 parts for each week of the sprint. The first
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30), [Design-SD-36](https://scrumster.atlassian.net/browse/SD-36)
-| Subflow S1    | Done             |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
-| Subflow S2     | Done            |  [SD-41](https://scrumster.atlassian.net/browse/SD-41)
-| Alternative flow E1     | Done             | [SD-41](https://scrumster.atlassian.net/browse/SD-41)
+| Use Case 1     | Move tasks from one state to another          | [Link to Story: Use case 1](https://scrumster.atlassian.net/browse/SD-30), [Design SD-36](https://scrumster.atlassian.net/browse/SD-36)
+| Subflow S1    | Done             |  [SD-41](https://scrumster.atlassian.net/browse/SD-41), [Implementation SD-43](https://scrumster.atlassian.net/browse/SD-43)
+| Subflow S2     | Done            |  [SD-41](https://scrumster.atlassian.net/browse/SD-41), [Implementation SD-43](https://scrumster.atlassian.net/browse/SD-43)
+| Alternative flow E1     | Done             | [SD-41](https://scrumster.atlassian.net/browse/SD-41), [Implementation SD-43](https://scrumster.atlassian.net/browse/SD-43)
 | Selenium Testing      | In Progress             | [SD-33](https://scrumster.atlassian.net/browse/SD-33)
 
 ##### Week 3
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31),[Design SD-37](https://scrumster.atlassian.net/browse/SD-37)
-| Subflow S1     | Done             | [SD-39](https://scrumster.atlassian.net/browse/SD-39)
-| Subflow S2     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
-| Subflow S3     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40)
+| Use Case 2     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31),  [Design SD-37](https://scrumster.atlassian.net/browse/SD-37)
+| Subflow S1     | Done             | [SD-39](https://scrumster.atlassian.net/browse/SD-39), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
+| Subflow S2     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
+| Subflow S3     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
 | Selenium Testing      | In Progress             |  [SD-34](https://scrumster.atlassian.net/browse/SD-34)
 
 ##### Week 4
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32),[Design SD-38](https://scrumster.atlassian.net/browse/SD-38)
-| Subflow S1     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
-| Subflow S2     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
-| Subflow S3     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42)
+| Use Case 3     | Schedule a meeting for the team          | [Link to Story: Use case 3](https://scrumster.atlassian.net/browse/SD-32),  [Design SD-38](https://scrumster.atlassian.net/browse/SD-38)
+| Subflow S1     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42), [Implementation SD-45](https://scrumster.atlassian.net/browse/SD-45)
+| Subflow S2     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42), [Implementation SD-45](https://scrumster.atlassian.net/browse/SD-45)
+| Subflow S3     | Done             |  [SD-42](https://scrumster.atlassian.net/browse/SD-42), [Implementation SD-45](https://scrumster.atlassian.net/browse/SD-45)
 | Alternative flow E1| Done    | [SD-42](https://scrumster.atlassian.net/browse/SD-42)
 | Selenium Testing      | In Progress             |  [SD-35](https://scrumster.atlassian.net/browse/SD-35)
