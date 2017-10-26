@@ -66,9 +66,9 @@ Use Case: Schedule a meeting for the team.
   [E1] No timings matching for team members.
 ```
 ### Mocking Service Component
-For mocking sevice component we have used WireMock framework. Key challege faced in this step is to mock service component in AWS Lambda. Many other framework do not seem to address the service mocking requirements or do not work well in AWS lambda. All potential REST API calls to the service have been mocked. 
+For mocking sevice component we have used the "WireMock" framework. The key challenge that we faced in this step is to mock the service component in AWS Lambda. Many other frameworks do not seem to address the service mocking requirements or do not work well in AWS lambda. All potential REST API calls to the service have been mocked. 
 
-MockServer class in the package `com.nmvk.scrumster.mock` contains mock server logic. MockData class in `com.nmvk.scrumster.mock` contains mock data used in the lambda. One of the design consideration in AWS lambda function is to keep less computation logic in lambda function, this is required to reduce latency of response.
+MockServer class in the package `com.nmvk.scrumster.mock` contains mock server logic. MockData class in `com.nmvk.scrumster.mock` contains mock data used in the Lambda. One of the design considerations in AWS lambda function is to keep less computation logic in the Lambda function, this is required to reduce the latency of response.
 
 ### Bot Implementation
 #### Bot platform
