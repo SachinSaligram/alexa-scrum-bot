@@ -1,5 +1,5 @@
 ## Worksheet
-The Worksheet is broken down into 4 parts for each week of the sprint. The first week covers the Use Case refinement section of the Deliverable. The next 3 weeks focuses on each of the Use Cases and their corresponding subflows and alternative flows. Under each subflow or alternative flow is a list of tasks (JIRA links provided) pertaining to that particular subflow(eg. Design, implementation, mocking, selenium testing etc).
+The Worksheet is broken down into 4 parts for each week of the sprint. The first week covers the Use Case refinement section of the Deliverable. The next 3 weeks focuses on each of the Use Cases and their corresponding subflows and alternative flows. Under each subflow or alternative flow is a list of tasks (JIRA links provided) pertaining to that particular subflow(eg. Design, implementation, mocking, selenium testing etc). Our tasks are denoted on the JIRA Board as SD-{ID}.
 
 ##### Week 1
 
