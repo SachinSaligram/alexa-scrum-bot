@@ -176,13 +176,18 @@ Every implementation of an Amazon Alexa application has an intent scheme.The int
 ```
 
 #### Bot Integration
-The bot has been full integrated for the 3 use cases defined with all possible input/output combinations.
+The bot has been full integrated for the 3 use cases defined with all possible input/output combinations through voice and text as illustrated in the screencast. One good path is as shown below for the 3 use cases: 
 ##### UseCase1:
-I/p: 
-
+I/p: Ask Scrumster Move Task 20 to Done
+O/p: Your task has been successfully moved to done 
 ##### UseCase2:
-
+I/p: Ask Scrumster to End stand-up
+O/p: Your team has burnt 12 points and is on track
 ##### UseCase3:
+I/p: Ask Scrumster schedule meeting today
+O/p: Meeting Scheduled for October 25th at 2:30 PM
+
+We have used mocked data for the JIRA/Trello board updates and reads for now. In the next phase the bot would read from JIRA APIs to fetch sprint summaries and update tasks from one state to the other. It would also look up google calender data instead of mocked data for team availability to schedule a meeting. 
 
 ### Selenium Testing
 *** We are building an Alexa based bot. For our Selenium testing we were logging in to Amazon Developer and providing text commands in echo simulation to invoke our bot implementation. However, we were not able to login to Amazon developer account using selenium since Amazon systems detect automation scripts and give a captcha to solve in order to make sure its not a Robot. So if a captcha is thrown the user will have to key his/her response in manually. We spoke to the professor and he told us that he will make an exception for our project to post-pone selenium testing until the next milestone, when we can run it on the JIRA/Trello page to test actual updation of data through the Alexa interface.  
