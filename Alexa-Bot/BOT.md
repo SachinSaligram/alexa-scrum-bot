@@ -64,7 +64,8 @@ Use Case: Schedule a meeting for the team.
 ### Bot Implementation
 #### Bot platform
 Every implementation of an Amazon Alexa application has an intent scheme.The intent scheme is linked to an Amazon lambda function. The lambda function continuously listens for input from the intent scheme through the Alexa module or simulator. For eg. if a user says "schedule meeting", the lambda function picks up the intent and maps to the corresponding funtion within the lamdba. This java function would help realize the back-end integration required for the intent (Google calender API call, Integration with JIRA/Trello etc). We have developed our bot in the echosim platform, which is a simulator for Alexa that Amazon provides. We have hooks into the platform through both text and voice input which will be demonstrated in our screencast. We have defiend an intent scheme as follows:
-'''xml
+
+```
 {
   "intents": [
     {
@@ -172,7 +173,8 @@ Every implementation of an Amazon Alexa application has an intent scheme.The int
     }
   ]
 }
-'''
+```
+
 #### Bot Integration
 The bot has been full integrated for the 3 use cases defined with all possible input/output combinations.
 ##### UseCase1:
