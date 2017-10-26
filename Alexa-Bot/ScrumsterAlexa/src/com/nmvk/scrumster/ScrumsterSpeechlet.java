@@ -1,5 +1,12 @@
 package com.nmvk.scrumster;
 
+import com.amazonaws.util.json.JSONArray;
+import com.nmvk.scrumster.mock.MockServer;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +23,10 @@ import com.amazon.speech.ui.Reprompt;
 import com.amazon.speech.ui.SimpleCard;
 import com.amazon.speech.ui.OutputSpeech;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Scanner;
+
 /**
  * Entry point of scrumster application.
  *
@@ -23,6 +34,9 @@ import com.amazon.speech.ui.OutputSpeech;
  */
 public class ScrumsterSpeechlet implements SpeechletV2 {
     private static final Logger log = LoggerFactory.getLogger(ScrumsterSpeechlet.class);
+    private MockServer mockServer = new MockServer();
+
+    CloseableHttpClient httpClient = HttpClients.createDefault();
 
     @Override
     public void onSessionStarted(SpeechletRequestEnvelope<SessionStartedRequest> requestEnvelope) {
@@ -40,6 +54,7 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
     @Override
     public SpeechletResponse onIntent(SpeechletRequestEnvelope<IntentRequest> requestEnvelope) {
         IntentRequest request = requestEnvelope.getRequest();
+        mockServer.start();
         log.info("onIntent requestId={}, sessionId={}", request.getRequestId(),
                 requestEnvelope.getSession().getSessionId());
 
@@ -55,6 +70,7 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
         } else if (ScrumsterIntent.SUMMARY.equals(intentName)){
             return handleSummary();
         } else {
+            mockServer.stop();
             return getAskResponse(Util.title, "This is unsupported.  Please try something else.");
         }
     }
@@ -82,8 +98,15 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
      * @return SpeechletResponse spoken and visual response for the given intent
      */
     private SpeechletResponse handleSummary() {
-        String speechText = "Team has burnt 12 points, team is on track.";
+        String speechText = "Summary information is not available now.";
+        HttpGet request = new HttpGet(Util.host + "/summary");
 
+        try {
+            HttpResponse httpResponse = httpClient.execute(request);
+            speechText = convertResponseToString(httpResponse);
+        } catch (Exception exception) {
+            log.error(exception.getMessage());
+        }
         // Create the Simple card content.
         SimpleCard card = getSimpleCard(Util.title, speechText);
 
@@ -111,8 +134,18 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
         if (status == null) {
             return getAskResponse(Util.title, "Sure can please tell me the status?");
         }
-        String speechText = "Your task " + taskId + " has been successfully moved to " + status ;
+        String speechText = "There is no task with task id " + taskId ;
+        //"Your task " + taskId + " has been successfully moved to " + status
+        try {
+            HttpPost httpPost = new HttpPost(Util.host + "/task/" + taskId);
+            HttpResponse httpResponse = httpClient.execute(httpPost);
 
+            if (httpResponse.getStatusLine().getStatusCode() == 201) {
+                speechText = "Your task " + taskId + " has been successfully moved to " + status;
+            }
+        } catch (IOException exception) {
+            log.error(exception.getMessage());
+        }
         // Create the Simple card content.
         SimpleCard card = getSimpleCard(Util.title, speechText);
 
@@ -135,8 +168,27 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
         if (date == null) {
             return getAskResponse(Util.title, "Sure can you tell me when to schedule?");
         }
+        HttpGet request = new HttpGet(Util.host + "/calendar/" + date);
+        String speechText = "Could not schdeule meeting on " + date;
 
-        String speechText = "Scheduled meeting on " + date + " 2:30PM";
+        try {
+            HttpResponse httpResponse = httpClient.execute(request);
+            JSONArray jsonArray = new JSONArray(convertResponseToString(httpResponse));
+
+            // Time slot exist
+            if (jsonArray.length() > 0) {
+                HttpPost httpPost = new HttpPost(Util.host + "/calendar/" + date);
+                httpResponse = httpClient.execute(httpPost);
+
+                if (httpResponse.getStatusLine().getStatusCode() == 201) {
+                    speechText = "Successfully scheduled meeting on " + date + " from " + jsonArray.get(0).toString();
+                }
+
+            }
+
+        } catch (Exception exception) {
+            log.error(exception.getMessage());
+        }
 
         // Create the Simple card content.
         SimpleCard card = getSimpleCard(Util.title, speechText);
@@ -208,5 +260,19 @@ public class ScrumsterSpeechlet implements SpeechletV2 {
         Reprompt reprompt = getReprompt(speech);
 
         return SpeechletResponse.newAskResponse(speech, reprompt, card);
+    }
+
+    /**
+     * Convert response to String.
+     * @param response
+     * @return response string
+     * @throws IOException
+     */
+    private String convertResponseToString(HttpResponse response) throws IOException {
+        InputStream responseStream = response.getEntity().getContent();
+        Scanner scanner = new Scanner(responseStream, "UTF-8");
+        String responseString = scanner.useDelimiter("\\Z").next();
+        scanner.close();
+        return responseString;
     }
 }

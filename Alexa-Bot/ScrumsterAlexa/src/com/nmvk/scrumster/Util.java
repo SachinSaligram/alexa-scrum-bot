@@ -11,4 +11,8 @@ public interface Util {
      */
     String title = "Scrumster";
 
+    /**
+     * Host.
+     */
+    String host = "http://localhost:8080";
 }
