@@ -62,8 +62,9 @@ Use Case: Schedule a meeting for the team.
 ### Mocking Service Component
 
 ### Bot Implementation
-Every implementation has an intent. We have defiend an intent scheme 
-'''
+#### Bot platform
+Every implementation of an Amazon Alexa application has an intent scheme.The intent scheme is linked to an Amazon lambda function. The lambda function continuously listens for input from the intent scheme through the Alexa module or simulator. For eg. if a user says "schedule meeting", the lambda function picks up the intent and maps to the corresponding funtion within the lamdba. This java function would help realize the back-end integration required for the intent (Google calender API call, Integration with JIRA/Trello etc). We have developed our bot in the echosim platform, which is a simulator for Alexa that Amazon provides. We have hooks into the platform through both text and voice input which will be demonstrated in our screencast. We have defiend an intent scheme as follows:
+'''xml
 {
   "intents": [
     {
@@ -172,6 +173,15 @@ Every implementation has an intent. We have defiend an intent scheme
   ]
 }
 '''
+#### Bot Integration
+The bot has been full integrated for the 3 use cases defined with all possible input/output combinations.
+##### UseCase1:
+I/p: 
+
+##### UseCase2:
+
+##### UseCase3:
+
 ### Selenium Testing
 *** We are building an Alexa based bot. For our Selenium testing we were logging in to Amazon Developer and providing text commands in echo simulation to invoke our bot implementation. However, we were not able to login to Amazon developer account using selenium since Amazon systems detect automation scripts and give a captcha to solve in order to make sure its not a Robot. So if a captcha is thrown the user will have to key his/her response in manually. We spoke to the professor and he told us that he will make an exception for our project to post-pone selenium testing until the next milestone, when we can run it on the JIRA/Trello page to test actual updation of data through the Alexa interface.  
 
