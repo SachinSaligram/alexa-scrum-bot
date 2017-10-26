@@ -1,9 +1,9 @@
 ## BOT Milestone phase
 
 __Team Members (Unity Id) and Contributions__
-* Raghavendra Nayak Muddur (rmuddur): Java code implementation for usecases
+* Raghavendra Nayak Muddur (rmuddur): Java code implementation for usecases, Lambda function mapping
 * Kshitija Murudi (kmurudi): Mocking Service Component, Use Case Refinement
-* Vishal Kumar Seshagirirao Anil (vseshag): Task and JIRA scrum board Tracking , Design of Usecase implementation and interactions, BOT.md documentation
+* Vishal Kumar Seshagirirao Anil (vseshag): Task and JIRA scrum board Tracking , Design of Usecase interactions, BOT.md documentation
 * Sachin Saligram (ssaligr): Intent scheme creation, Infrastructure setup, Selenium Testing
 
 ### Use Case Refinement
