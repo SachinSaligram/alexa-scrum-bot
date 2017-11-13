@@ -25,17 +25,18 @@ The completed Scrumboard is as follows: [JIRA Scrum Board]()
 | ------------- | ------------  |  ------------
 | Use Case 2 implementation     |           | [Link to Story: Use Case 2 implementation](https://scrumster.atlassian.net/browse/SD-48), [Design SD-36](https://scrumster.atlassian.net/browse/SD-36)
 | Investigate sprint summary API    | Done             |   [SD-54](https://scrumster.atlassian.net/browse/SD-54)
-| Implement sprint summary end point     | Done            |  [SD-55](https://scrumster.atlassian.net/browse/SD-41), [Implementation SD-43](https://scrumster.atlassian.net/browse/SD-55)
+| Implement sprint summary end point     | Done            |  [SD-55](https://scrumster.atlassian.net/browse/SD-55)
 | Selenium Testing      | Done             | [SD-34](https://scrumster.atlassian.net/browse/SD-34)
 
 ##### Week 3
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Use Case 3 implementation     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-31),  [Design SD-37](https://scrumster.atlassian.net/browse/SD-37)
-| Subflow S1     | Done             | [SD-39](https://scrumster.atlassian.net/browse/SD-39), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
-| Subflow S2     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
-| Subflow S3     | Done             |  [SD-40](https://scrumster.atlassian.net/browse/SD-40), [Implementation SD-44](https://scrumster.atlassian.net/browse/SD-44)
-| Selenium Testing      | In Progress             |  [SD-34](https://scrumster.atlassian.net/browse/SD-34)
+| Use Case 3 implementation     | Sprint Summary and Feedback          | [Link to Story: Use case 2](https://scrumster.atlassian.net/browse/SD-49)
+| Investigate Google calendar API     | Done             | [SD-56](https://scrumster.atlassian.net/browse/SD-56)
+| POC using Google API     | Done             |  [SD-57](https://scrumster.atlassian.net/browse/SD-57)
+| Evaluate credential storage     | Done             |  [SD-58](https://scrumster.atlassian.net/browse/SD-58)
+| Implement calendar end point     | Done             |  [SD-59](https://scrumster.atlassian.net/browse/SD-59)
+| Selenium Testing      | Done            |  [SD-35](https://scrumster.atlassian.net/browse/SD-35)
 
 
