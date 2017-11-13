@@ -7,7 +7,7 @@ Password: scrumster2017
 
 The Worksheet is broken down into 3 parts corresponding to 3 stories for each week of the sprint. The first week and story covers Use Case 1 implementation. Similarly,  the next 2 weeks and stories focus on Use Case 2 and 3 implementations. Under each story is a list of tasks (JIRA links provided) pertaining to that particular story. Our tasks are denoted on the JIRA Board as SD-{ID}.
 
-The completed Scrumboard is as follows: [JIRA Scrum Board]()
+The completed Scrumboard is as follows: [JIRA Scrum Board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=2&view=detail&selectedIssue=SD-46)
 
 ##### Week 1
 
