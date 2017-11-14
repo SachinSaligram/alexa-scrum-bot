@@ -14,16 +14,7 @@ import java.util.Set;
 /**
  * Created by raghav on 11/5/2017.
  */
-@RestController
-@RequestMapping("/data")
 public class LogController {
 
-    @Autowired
-    Jedis jedis;
 
-    @CrossOrigin
-    @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity<Set<String>> data() {
-        return ResponseEntity.ok(jedis.smembers(LocalDate.now().toString()));
-    }
 }

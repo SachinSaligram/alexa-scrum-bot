@@ -45,9 +45,6 @@ public class ScrumController {
     final String prefix = "AT-";
     final String BOARD_ID = "1";
 
-    @Autowired
-    Jedis jedis;
-
     /**
      * Httpclient for httprequest.
      */
@@ -99,7 +96,6 @@ public class ScrumController {
             data.put("21", "In progress");
             data.put("31", "Done");
 
-            jedis.sadd(LocalDate.now().toString(), "<a href='#' class='list-group-item list-group-item-action'> <h4 class='list-group-item-heading'><i class='fa fa-arrows' aria-hidden='true'></i> Task status changed</h4> <p class='list-group-item-text'> Task "+taskId+" was moved to "+ data.get(stateId) +".</p> </a>");
             return ResponseEntity.ok(issue.getIssueType().getName()+ " " + taskId + " successfully moved to " + changeProgress.getName() + " state ");
 
         } catch (RestClientException exception) {
@@ -122,7 +118,6 @@ public class ScrumController {
         if (response.getStatusLine().getStatusCode() == 400) {
             msg = "Task " + taskId + " does not exist";
         } else {
-            jedis.sadd(LocalDate.now().toString(), "<a href='#' class='list-group-item list-group-item-action'> <h4 class='list-group-item-heading'><i class='fa fa-ban' aria-hidden='true'></i> Moved to Backlog</h4> <p class='list-group-item-text'> Task "+taskId+" was moved to backlog</p>");
             msg = "Task " + taskId + " successfully moved to backlog";
         }
         return ResponseEntity.ok(msg);
@@ -146,7 +141,6 @@ public class ScrumController {
         if (response.getStatusLine().getStatusCode() == 400) {
             msg = "Task " + taskId + " does not exist or there is no active sprint";
         } else {
-            jedis.sadd(LocalDate.now().toString(), "<a href='#' class='list-group-item list-group-item-action'> <h4 class='list-group-item-heading'><i class='fa fa-plus-square-o' aria-hidden='true'></i> Added to active sprint</h4> <p class='list-group-item-text'>"+taskId+"Was added to active sprint.</p> </a>");
             msg = "Task " + taskId + " successfully moved to the active sprint";
         }
         return ResponseEntity.ok(msg);
@@ -154,7 +148,6 @@ public class ScrumController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String sayHello() throws Exception{
-        jedis.set("Woo", "Mr Woo");
         HttpGet httpGet = new HttpGet("https://scrumster.atlassian.net/rest/api/latest/issue/AT-1");
         signRequest(httpGet);
 
