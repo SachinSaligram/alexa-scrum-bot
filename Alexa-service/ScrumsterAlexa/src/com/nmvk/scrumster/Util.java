@@ -9,7 +9,7 @@ public interface Util {
     /**
      * Title
      */
-    String title = "Emma";
+    String title = "Scrumster";
 
     /**
      * Host.

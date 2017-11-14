@@ -30,8 +30,8 @@ import java.util.Scanner;
  *
  * @author raghav
  */
-public class EmmaSpeechlet implements SpeechletV2 {
-    private static final Logger log = LoggerFactory.getLogger(EmmaSpeechlet.class);
+public class ScrumsterSpeechlet implements SpeechletV2 {
+    private static final Logger log = LoggerFactory.getLogger(ScrumsterSpeechlet.class);
     //private MockServer mockServer = new MockServer();
 
     CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -59,11 +59,11 @@ public class EmmaSpeechlet implements SpeechletV2 {
 
         Intent intent = request.getIntent();
         String intentName = (intent != null) ? intent.getName() : null;
-        if (EmmaIntent.MOVE_WORK_ITEM.equals(intentName)) {
+        if (ScrumsterIntent.MOVE_WORK_ITEM.equals(intentName)) {
             return handleMoveTask(intent, currentSession);
-        } else if (EmmaIntent.SCHEDULE_MEETING.equals(intentName)) {
+        } else if (ScrumsterIntent.SCHEDULE_MEETING.equals(intentName)) {
             return handleMeeting(intent, currentSession);
-        } else if (EmmaIntent.SUMMARY.equals(intentName)) {
+        } else if (ScrumsterIntent.SUMMARY.equals(intentName)) {
             return handleSummary(intent, currentSession);
         } else if ("AMAZON.CancelIntent".equals(intentName) || "AMAZON.StopIntent".equals(intentName)) {
             return handleIntentStop(intent, currentSession);
@@ -160,7 +160,7 @@ public class EmmaSpeechlet implements SpeechletV2 {
     }
 
     private SpeechletResponse handleIntentHelp(Intent intent, Session currentSession) {
-        String speechText = "Hi, my name is emma. Ask me to move a task, or, schedule a meeting, or, ask for sprint summary.";
+        String speechText = "Hi, my name is Scrumster. Ask me to move a task, or, schedule a meeting, or, ask for sprint summary.";
 
         // Create the Simple card content.
         SimpleCard card = getSimpleCard(Util.title, speechText);

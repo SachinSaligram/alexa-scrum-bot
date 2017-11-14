@@ -5,7 +5,7 @@ package com.nmvk.scrumster;
  *
  * @author Sweekrut
  */
-public interface EmmaIntent {
+public interface ScrumsterIntent {
 
     /**
      * Alexa help intent.
