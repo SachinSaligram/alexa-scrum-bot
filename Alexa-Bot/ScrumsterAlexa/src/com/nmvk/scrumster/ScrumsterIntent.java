@@ -3,7 +3,7 @@ package com.nmvk.scrumster;
 /**
  * Contains list of intent used in the application.
  *
- * @author raghav
+ * @author Sweekrut
  */
 public interface ScrumsterIntent {
 
@@ -16,6 +16,11 @@ public interface ScrumsterIntent {
      * Move work item.
      */
     String MOVE_WORK_ITEM = "MoveWorkItem";
+
+    /**
+     * Remove work item.
+     */
+    String REMOVE_WORK_ITEM = "RemoveWorkItem";
 
     /**
      * Schedule meeting.
