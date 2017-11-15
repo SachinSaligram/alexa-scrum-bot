@@ -290,7 +290,9 @@ public class CalendarController {
             DateTime end_date1 = GetFormat(date, user_slot.get(0), false);
             //System.out.println("Format output " + end_date1);
             create_event(service, users, zone, start_date1, end_date1);
+            
             ZonedDateTime zonedDateTime = ZonedDateTime.parse(start_date1.toStringRfc3339());
+            zonedDateTime = zonedDateTime.withZoneSameInstant(ZoneId.of("America/New_York"));
             String dateStr = zonedDateTime.toLocalDate().toString();
             String time = zonedDateTime.toLocalTime().toString();
             String output ="Successfully scheduled meeting on " + dateStr + " for 30 minutes from " + time;
