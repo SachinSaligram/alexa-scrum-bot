@@ -20,7 +20,7 @@ For deploying our service, we have used Spring framework and the entire code is 
 
 The screencast includes the demo of all our 3 uses cases and how we have used Amazon's Alexa as the Scrumster. 
 
-Link for screencast - [Service-Screencast]()
+Link for screencast - [Service-Screencast](http://www.youtube.com/watch?v=snJTRYRXu4I)
 
 ## Use Case #1 Implementation -
 
