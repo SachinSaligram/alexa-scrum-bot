@@ -12,7 +12,7 @@ So, due to extension granted by Professor Parnin for our project, we have Seleni
 The file which includes all the Selenium tests -> [WebTest.java](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/Selenium/src/test/java/selenium/tests/WebTest.java)
 
 ## Screencast for Selenium Testing ->
-[Selenium-Screencast]()
+[Selenium-Screencast](https://youtu.be/ChUwR0zFxh4)
 
 ## SERVICE MILESTONE ->
 In this milestone, we have implemented all the below listed components ->
