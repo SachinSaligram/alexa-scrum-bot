@@ -1,11 +1,11 @@
 ### Team + Unity IDs
 
-* Raghavendra Nayak Muddur(rmuddur)
-* Sachin Saligram(ssaligr)
-* Kshitija Mohan Murudi(kmurudi)
-* Vishal Kumar Seshagirirao Anil(vseshag)
+* Raghavendra Nayak Muddur (rmuddur)
+* Sachin Saligram (ssaligr)
+* Kshitija Mohan Murudi (kmurudi)
+* Vishal Kumar Seshagirirao Anil (vseshag)
 
-### SELENIUM TESING - PART OF MILESTONE - BOT 
+# SELENIUM TESING - PART OF MILESTONE - BOT 
 
 So, due to extension granted by Professor Parnin for our project, we have Selenium testing due for Bot Milestone, included in the folder for this milestone. The link for folder for Selenium testing is -> [Selenium](https://github.ncsu.edu/rmuddur/Scrumster/tree/master/Alexa-service/Selenium)
 
