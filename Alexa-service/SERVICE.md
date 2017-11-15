@@ -61,7 +61,7 @@ We have tracked our tasks throughout the period we worked for this milestone usi
 This milestone may require login credentials for several accounts. For convenience, we have provided all credentials that will allow anyone to login into the mentioned accounts.
 
 1. JIRA Account
-* Link: http://scrumster.atlassian.net
+* Link: https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=1
 * Username: scrumuser2017@gmail.com
 * Password: scrumster2017
 
