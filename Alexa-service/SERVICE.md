@@ -56,4 +56,16 @@ The service for this use case has been included in a separate controller - [Cale
 We have tracked our tasks throughout the period we worked for this milestone using the Atlassian product - JIRA software and the worksheet where we have tracked tasks is present here ->
 [WORKSHEET.md](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/WORKSHEET.md)
 
+## Credentials - 
 
+This milestone may require login credentials for several accounts. For convenience, we have provided all credentials that will allow anyone to login into the mentioned accounts.
+
+1. JIRA Account
+* Link: http://scrumster.atlassian.net
+* Username: scrumuser2017@gmail.com
+* Password: scrumster2017
+
+2. Google Calendar Account
+* Link: http://calendar.google.com
+* Username: sachin@ouruse.com
+* Password: scrumster2017
