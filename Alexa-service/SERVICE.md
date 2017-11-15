@@ -5,6 +5,15 @@
 * Kshitija Mohan Murudi(kmurudi)
 * Vishal Kumar Seshagirirao Anil(vseshag)
 
+### SELENIUM TESING - PART OF MILESTONE - BOT 
+
+So, due to extension granted by Professor Parnin for our project, we have Selenium testing due for Bot Milestone, included in the folder for this milestone. The link for folder for Selenium testing is -> [Selenium](https://github.ncsu.edu/rmuddur/Scrumster/tree/master/Alexa-service/Selenium)
+
+The file which includes all the Selenium tests -> [WebTest.java](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/Selenium/src/test/java/selenium/tests/WebTest.java)
+
+## Screencast for Selenium Testing ->
+[Selenium-Screencast]()
+
 
 In this milestone, we have implemented all the below listed components ->
 
