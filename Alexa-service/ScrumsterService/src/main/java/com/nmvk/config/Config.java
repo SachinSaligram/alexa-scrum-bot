@@ -71,9 +71,9 @@ public class Config {
     public Calendar getCalendarService() throws Exception{
         HttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
         JacksonFactory jsonFactory = JacksonFactory.getDefaultInstance();
-        Path path = Paths.get(getClass().getClassLoader()
-                .getResource("client-secret.p12").toURI());
-
+        //Path path = Paths.get(getClass().getClassLoader()
+          //      .getResource("client-secret.p12").toURI());
+        String path = "/home/ec2-user/client-secret.p12";
         GoogleCredential credential = new GoogleCredential.Builder().setTransport(httpTransport)
                 .setJsonFactory(jsonFactory).setServiceAccountId("calender@ourcal-185819.iam.gserviceaccount.com")
                 .setServiceAccountPrivateKeyFromP12File(new File(path.toString()))
