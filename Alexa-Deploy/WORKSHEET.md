@@ -7,6 +7,9 @@ Password: scrumster2017
 
 The Worksheet is broken down into 2 parts corresponding to the 2 weeks of the sprint. The first 3 stories were achieved as part of week 1 and the next 2 were acheived as part of week 2 of the sprint. The 3 stories in the first week cover Task tracking, Deployment and Acceptance testing. The next 2 stories in the following week focus on Exploratory Testing, Code Inspection and screencast. Under each story is a list of tasks (JIRA links provided) pertaining to that particular story. Our tasks are denoted on the JIRA Board as SD-{ID}.
 
+The summary of the sprint at its start is as follows:
+![sprint_plan](https://media.github.ncsu.edu/user/8297/files/4c4b2e68-d379-11e7-88ec-a96bbe2c42f0)
+
 The completed Scrumboard is as follows: [JIRA Scrum Board]()
 
 ##### Week 1
