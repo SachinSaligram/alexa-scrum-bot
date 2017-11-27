@@ -21,7 +21,7 @@ The completed Scrumboard is as follows: [JIRA Scrum Board]()
 | Scripts to instantiate environment     | Done             |  [SD-72](https://scrumster.atlassian.net/browse/SD-72)
 | Scripts to run bot in environment      | Done             |  [SD-73](https://scrumster.atlassian.net/browse/SD-73)
 | Deployment testing      | Done             |  [SD-74](https://scrumster.atlassian.net/browse/SD-74)
-| Acceptance testing (Story)      | Deploy the bot on a remote environment          | [Link to Story: Acceptance testing](https://scrumster.atlassian.net/browse/SD-68)
+| Acceptance testing (Story)      | Give instructions for acceptance testing         | [Link to Story: Acceptance testing](https://scrumster.atlassian.net/browse/SD-68)
 | Acceptance test instructions     | Done             | [SD-75](https://scrumster.atlassian.net/browse/SD-75)
 | Time testing     | Done             |  [SD-76](https://scrumster.atlassian.net/browse/SD-76)
 | Load testing     | Done             |  [SD-77](https://scrumster.atlassian.net/browse/SD-77)
@@ -30,11 +30,11 @@ The completed Scrumboard is as follows: [JIRA Scrum Board]()
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Exploratory Testing and Code Inspection (Story)     |           | [Link to Story: Exploratory Testing and Code Inspection](https://scrumster.atlassian.net/browse/SD-69)
+| Exploratory Testing and Code Inspection (Story)     | Prepare for code inspection          | [Link to Story: Exploratory Testing and Code Inspection](https://scrumster.atlassian.net/browse/SD-69)
 | Interaction/mock data guidelines    | Done             |   [SD-83](https://scrumster.atlassian.net/browse/SD-83)
 | Known edge case documentation     | Done            |  [SD-84](https://scrumster.atlassian.net/browse/SD-84)
 | Mock exploratory testing      | Done             | [SD-85](https://scrumster.atlassian.net/browse/SD-85)
-| Screencast (Story)   |           | [Link to Story: Screencast](https://scrumster.atlassian.net/browse/SD-70)
+| Screencast (Story)   |    Create Screencast       | [Link to Story: Screencast](https://scrumster.atlassian.net/browse/SD-70)
 | Create screencast      | Done             | [SD-82 ](https://scrumster.atlassian.net/browse/SD-82)
 
 
