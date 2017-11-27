@@ -30,10 +30,10 @@ The completed Scrumboard is as follows: [JIRA Scrum Board]()
 
 | Deliverable   | Item/Status   |  Issues/Tasks/Solution
 | ------------- | ------------  |  ------------
-| Exploratory Testing and Code Inspection (Story)     |           | [Link to Story: Exploratory Testing and Code Inspection](https://scrumster.atlassian.net/browse/SD-48)
-| Investigate sprint summary API    | Done             |   [SD-54](https://scrumster.atlassian.net/browse/SD-54)
-| Implement sprint summary end point     | Done            |  [SD-55](https://scrumster.atlassian.net/browse/SD-55)
-| Selenium Testing      | Done             | [SD-34](https://scrumster.atlassian.net/browse/SD-34)
+| Exploratory Testing and Code Inspection (Story)     |           | [Link to Story: Exploratory Testing and Code Inspection](https://scrumster.atlassian.net/browse/SD-69)
+| Interaction/mock data guidelines    | Done             |   [SD-83](https://scrumster.atlassian.net/browse/SD-83)
+| Known edge case documentation     | Done            |  [SD-84](https://scrumster.atlassian.net/browse/SD-84)
+| Mock exploratory testing      | Done             | [SD-85](https://scrumster.atlassian.net/browse/SD-85)
 | Screencast (Story)   |           | [Link to Story: Screencast](https://scrumster.atlassian.net/browse/SD-70)
 | Create screencast      | Done             | [SD-82 ](https://scrumster.atlassian.net/browse/SD-82)
 
