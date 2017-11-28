@@ -2,7 +2,8 @@
 
 ### Deployment
 
-Link to screencast for deployment: 
+#### Screencast
+Link to screencast for deployment: ()
 
 The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command:
 
@@ -44,3 +45,6 @@ We also have a relatively static Amazon lambda function as part of our architect
 2. Echosim.io (URL to test alexa without Alexa, use amazon developer credentials) Link : [https://echosim.io](https://echosim.io)
 3. Google Calendar **(Use ouruse credentials listed above)** Link : [https://calendar.google.com/calendar/](https://calendar.google.com/calendar/)
 4. Jira Link: [https://scrumster.atlassian.net](https://scrumster.atlassian.net) 
+
+### Worksheet
+The Worksheet for Milestone 4 (DEPLOY) can be found here: [Worksheet](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/WORKSHEET.md)
