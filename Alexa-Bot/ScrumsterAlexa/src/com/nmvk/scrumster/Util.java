@@ -14,5 +14,5 @@ public interface Util {
     /**
      * Host.
      */
-    String host = "http://ec2-34-203-31-34.compute-1.amazonaws.com";
+    String host = "http://54.174.205.13:8080";
 }
