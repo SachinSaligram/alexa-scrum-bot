@@ -33,11 +33,14 @@ The basic steps for testing all use cases involve -
 
 1. Login to [echosim.io](https://echosim.io/) using the credentials of Amazon Developer listed below in table (username: scrumuser2017@gmail.com & password: scrumster2017).
 
-2. Make sure the Console on the echosim page is always ON so that output can be seen as well along with hearing the output. It would be present at the top-right of the page -
+2. Make sure the Console button on the echosim page is always ON so that output can be seen as well along with hearing the output. It would be present at the top-right of the page -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se1.PNG)
 
+3. Login and keep the JIRA board that we use for testing the use-cases 1&2 always open to see the changes happening. Please use AT board - [AT board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=1&selectedIssue=AT-33) for testing the use cases #1 & #2.
 
-3. 
+4. Login to google calendars for the users listed below in the table with their credentials to see the output after performing use-case #3.
+
+
 #### Use Case #1 ->
 
 
