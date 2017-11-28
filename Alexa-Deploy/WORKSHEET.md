@@ -10,7 +10,7 @@ The Worksheet is broken down into 2 parts corresponding to the 2 weeks of the sp
 The summary of the sprint at its start is as follows:
 ![sprint_plan](https://media.github.ncsu.edu/user/8297/files/4c4b2e68-d379-11e7-88ec-a96bbe2c42f0)
 
-The completed Scrumboard is as follows: [JIRA Scrum Board]()
+The completed Scrumboard is as follows: [JIRA Scrum Board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=2&projectKey=SD&view=detail&selectedIssue=SD-66)
 
 ##### Week 1
 
