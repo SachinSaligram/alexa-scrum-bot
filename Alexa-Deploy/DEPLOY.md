@@ -34,7 +34,7 @@ The basic steps for testing all use cases involve -
 1. Login to [echosim.io](https://echosim.io/) using the credentials of Amazon Developer listed below in table (username: scrumuser2017@gmail.com & password: scrumster2017).
 
 2. Make sure the Console on the echosim page is always ON so that output can be seen as well along with hearing the output. It would be present at the top-right of the page -
-![img]()
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se1.PNG)
 
 
 3. 
