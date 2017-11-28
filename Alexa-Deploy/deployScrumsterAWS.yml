@@ -31,21 +31,6 @@
       #assign_public_ip: yes
     register: ec2
 
-  #- debug:
-  #    var: ec2.instances[0].public_ip
-  
-  #- name: allocate a new elastic IP inside a VPC in us-east-1
-  #  ec2_eip:
-  #    aws_access_key: "{{ vault['aws_access_key'] }}"
-  #    aws_secret_key: "{{ vault['aws_secret_key'] }}"
-  #    region: us-east-1
-  #    in_vpc: yes
-  #  register: eip
-
-  #- name: output the IP
-  #  debug:
-  #    msg: "Allocated IP inside a VPC is {{ eip.public_ip }}"
-
   - name: associate an elastic IP with a device
     ec2_eip:
       aws_access_key: "{{ vault['aws_access_key'] }}"
@@ -72,9 +57,6 @@
       timeout: 320
       state: started
 
-  #- name: accept new ssh fingerprints
-  #  shell: ssh-keyscan -H {{ ec2.instances[0].public_ip }} >> ~/.ssh/known_hosts
-
   - name: install pexpect module
     apt:
       name: python-pexpect
@@ -86,8 +68,6 @@
       responses:
         "Username for 'https://github.ncsu.edu':": "{{ vault['user'] }}"
         "Password for 'https://kmurudi@github.ncsu.edu':": "{{ vault['password'] }}"
-
-
 
   - name: Add Java repository
     apt_repository: repo='ppa:webupd8team/java' state=present update_cache=yes
