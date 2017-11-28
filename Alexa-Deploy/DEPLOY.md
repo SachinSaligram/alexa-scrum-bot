@@ -31,7 +31,13 @@ Here, we will describe how to test our use cases for our Scrumster bot and also 
 
 The basic steps for testing all use cases involve -
 
-1. Login to [echosim.io](https://echosim.io/) 
+1. Login to [echosim.io](https://echosim.io/) using the credentials of Amazon Developer listed below in table (username: scrumuser2017@gmail.com & password: scrumster2017).
+
+2. Make sure the Console on the echosim page is always ON so that output can be seen as well along with hearing the output. It would be present at the top-right of the page -
+![img]()
+
+
+3. 
 #### Use Case #1 ->
 
 
