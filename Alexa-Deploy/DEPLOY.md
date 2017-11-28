@@ -2,13 +2,25 @@
 
 ### Deployment
 
-The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command
+Link to screencast for deployment: 
+
+The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command:
 
 ```
  
  ansible-playbook deployScrumsterAWS.yml --vault-password-file ~/password.txt
  
  ```
+ The playbook is composed of the following steps:
+ 1. Create a new AWS VM
+ 2. Assign a fixed elastic IP to this VM
+ 3. Clone the code from our repository
+ 4. Build the code and produce a jar file
+ 5. Login to newly created VM and copy jar file to it
+ 6. Install depedencies to run jar on AWS VM
+ 7. Run the jar file using no hup
+ 
+We also have a relatively static Amazon lambda function as part of our architecture. This interacts with the AWS VM on which the service is running using calls to the static elastic IP address.
  
  *** In order to establish ssh connectivity with remote AWS instances we require a pem file which we keep on our local host, which cannot be shared.
 
