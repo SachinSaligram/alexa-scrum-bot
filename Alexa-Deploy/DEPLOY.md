@@ -1,5 +1,20 @@
+## Deploy
 
-### Credential Information
+### Deployment
+
+The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command
+
+```
+ 
+ ansible-playbook deployScrumsterAWS.yml --vault-password-file ~/password.txt
+ 
+ ```
+ 
+ *** In order to establish ssh connectivity with remote AWS instances we require a pem file which we keep on our local host, which cannot be shared.
+
+### Acceptance Testing
+
+#### Credential Information
 
 |   |Username|Password|
 |---|---|---|
@@ -11,7 +26,7 @@
 |Google Calendar| vishal@ouruse.com| scrumster2017|
 |Jira| scrumuser2017@gmail.com| scrumster2017|
 
-### Important Links
+#### Important Links
 
 1. Amazon Developer Link : [https://developer.amazon.com/home.html](https://developer.amazon.com/home.html)
 2. Echosim.io (URL to test alexa without Alexa, use amazon developer credentials) Link : [https://echosim.io](https://echosim.io)
