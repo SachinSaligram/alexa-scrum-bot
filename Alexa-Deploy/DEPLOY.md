@@ -19,13 +19,22 @@ The Deployment is carried out on a remote AWS environment and automated using An
  4. Build the code and produce a jar file
  5. Login to newly created VM and copy jar file to it
  6. Install depedencies to run jar on AWS VM
- 7. Run the jar file using no hup
+ 7. Run the jar file using nohup
  
 We also have a relatively static Amazon lambda function as part of our architecture. This interacts with the AWS VM on which the service is running using calls to the static elastic IP address.
  
  *** In order to establish ssh connectivity with remote AWS instances we require a pem file which we keep on our local host, which cannot be shared.
 
-### Acceptance Testing
+### Acceptance Testing Instructions
+
+Here, we will describe how to test our use cases for our Scrumster bot and also provide you with sample outputs to get an idea of how it would work.
+
+The basic steps for testing all use cases involve -
+
+1. Login to [echosim.io](echosim.io) 
+#### Use Case #1 ->
+
+
 
 - testing use case 1,2,3 using echosim - explain
 
