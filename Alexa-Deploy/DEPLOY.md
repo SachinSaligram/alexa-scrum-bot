@@ -27,6 +27,15 @@ We also have a relatively static Amazon lambda function as part of our architect
 
 ### Acceptance Testing
 
+- testing use case 1,2,3 using echosim - explain
+
+Ask scrumster to move task - task id - keep console open so that u can debug, - shows respons e(add screencast to show) - sample - one go, split asking to move task.
+
+move task - inavlid task id - tells "sorry, task 1000 not found"
+
+same for sprint summary - direct - "ask scrumster to provide with current sprint summary" - no edge case
+
+login - all google accpunts listed above - see when users are free and try to schedule at that time. - show when no time matches - block 9-5 , - gives no output, tells could not schedule meeting (using only 9-5 EST eastern time -) - team's not free try another date - response, if block date deleted - gives output again. 
 #### Credential Information
 
 |   |Username|Password|
