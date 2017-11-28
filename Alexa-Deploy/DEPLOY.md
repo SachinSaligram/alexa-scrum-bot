@@ -31,7 +31,7 @@ Here, we will describe how to test our use cases for our Scrumster bot and also 
 
 The basic steps for testing all use cases involve -
 
-1. Login to [echosim.io](echosim.io) 
+1. Login to [echosim.io](https://echosim.io/) 
 #### Use Case #1 ->
 
 
