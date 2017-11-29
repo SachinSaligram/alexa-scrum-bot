@@ -42,6 +42,25 @@ The basic steps for testing all use cases involve -
 
 **Note**- In all our use-cases, bot will be invoked by using 'Ask Scrumster' as initial part of commands.
 
+#### Credential Information
+
+|   |Username|Password|
+|---|---|---|
+|Amazon Developer|scrumuser2017@gmail.com|scrumster2017|
+|Google Calendar|raghav@ouruse.com|WootWoot9060|
+|Google Calendar|scrum@ouruse.con|WootWoot9060|
+|Google Calendar| kshitija@ouruse.com| WootWoot9060|
+|Google Calendar| sachin@ouruse.com| scrumster2017|
+|Google Calendar| vishal@ouruse.com| scrumster2017|
+|Jira| scrumuser2017@gmail.com| scrumster2017|
+
+#### Important Links
+
+1. Amazon Developer Link : [https://developer.amazon.com/home.html](https://developer.amazon.com/home.html)
+2. Echosim.io (URL to test alexa without Alexa, use amazon developer credentials) Link : [https://echosim.io](https://echosim.io)
+3. Google Calendar **(Use ouruse credentials listed above)** Link : [https://calendar.google.com/calendar/](https://calendar.google.com/calendar/)
+4. Jira Link: [https://scrumster.atlassian.net](https://scrumster.atlassian.net) 
+
 #### Use Case #1 ->
 
 Use Case: Move tasks from one state to another as per user input.
@@ -104,6 +123,14 @@ This use-case has no edge cases considered and it provides summary of story poin
 
 #### Use Case #3 ->
 
+Use Case: Schedule a meeting for the team.
+
+
+We are using G Suite account - our domain being "ouruse.com" so to get access via Google calendar API. Scrumster schedules a meeting for team by taking the "date" as input. So, for testing our third use-case, follow these steps ->
+
+`
+i) Login to Google Calendar [calendar](https://calendar.google.com/calendar/render) using all of these ouruse.com accounts - raghav@ouruse.com, sachin@ouruse.com, kshitija@ouruse.com, scrum@ouruse.com, vishal@ouruse.com. Password/credentials are provided in the table here - [credentials]()
+
 
 
 
@@ -113,24 +140,7 @@ This use-case has no edge cases considered and it provides summary of story poin
 
 
 login - all google accpunts listed above - see when users are free and try to schedule at that time. - show when no time matches - block 9-5 , - gives no output, tells could not schedule meeting (using only 9-5 EST eastern time -) - team's not free try another date - response, if block date deleted - gives output again. 
-#### Credential Information
 
-|   |Username|Password|
-|---|---|---|
-|Amazon Developer|scrumuser2017@gmail.com|scrumster2017|
-|Google Calendar|raghav@ouruse.com|WootWoot9060|
-|Google Calendar|scrum@ouruse.con|WootWoot9060|
-|Google Calendar| kshitija@ouruse.com| WootWoot9060|
-|Google Calendar| sachin@ouruse.com| scrumster2017|
-|Google Calendar| vishal@ouruse.com| scrumster2017|
-|Jira| scrumuser2017@gmail.com| scrumster2017|
-
-#### Important Links
-
-1. Amazon Developer Link : [https://developer.amazon.com/home.html](https://developer.amazon.com/home.html)
-2. Echosim.io (URL to test alexa without Alexa, use amazon developer credentials) Link : [https://echosim.io](https://echosim.io)
-3. Google Calendar **(Use ouruse credentials listed above)** Link : [https://calendar.google.com/calendar/](https://calendar.google.com/calendar/)
-4. Jira Link: [https://scrumster.atlassian.net](https://scrumster.atlassian.net) 
 
 ### Worksheet
 The Worksheet for Milestone 4 (DEPLOY) can be found here: [Worksheet](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/WORKSHEET.md)
