@@ -52,9 +52,49 @@ User shall test by using any of the below given phrases -
 
 Task-ID can be any valid task-ID present on the Scrum Board - AT board and the task ID is mentioned at the bottom-right of all the tasks listed on the board in active sprint. Our current active sprint is - 'Sample Sprint 2' on AT board.
 
-Task-ID ->
-![img]()
+Task-ID on a task -> example of task-ID here is 30 (if it is AT-16 or AT-30, we always mention on the number of the task to scrumster bot).
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se2.PNG)
 
+So, valid {status} that can be mentioned in the command can be one of these three - To Do, In Progress, Done.
+
+Example for use-case 1 testing -
+
+Sample utterance at echosim - "Ask Scrumster to move task 16 to Done"
+
+State of AT board current sprint before this action is performed ->
+![img](se3)
+
+Here AT-16 - Story 2 is in 'To Do' state.
+
+After this sample utterance at echosim, we get the following output on echosim -
+![img](se4)
+
+Refresh the AT board and you will see that Story 2 with task AT-16 has been moved to state Done -
+![img](se5)
+
+2. The second type to test this use-case is that one need not say the entire command at one go. User can split is as -
+Initial state of AT board -
+![img](se5)
+
+User utterance - "Ask Scrumster to move task" - to which Scrumster asks -
+![img](se6)
+
+User utterance - "30"  - to which Scrumster shall respond as -
+![img](se7)
+
+User utterance - "In progress" - to which the final response shall be -
+![img](se8)
+
+Now, refresh the board and see its changed state -
+![img](se9)
+
+
+**Edge Cases** - Edge cases for use-case 1 would be providing invalid Task-ID or status , to which bot would respond saying that it is an invalid input.
+
+
+#### Use Case #2 ->
+
+Use Case: Sprint Summary and Feedback
 
 
 - testing use case 1,2,3 using echosim - explain
