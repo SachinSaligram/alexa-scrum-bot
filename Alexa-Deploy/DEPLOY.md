@@ -3,9 +3,9 @@
 ### Deployment
 
 #### Screencast
-Link to screencast for deployment: [deployment screencast]()
+Link to screencast for deployment: [deployment screencast](http://www.youtube.com/watch?v=9SCpmlJBcP8)
 
-Link to screencast for functioning use-cases: [use-cases screencast]()
+Link to screencast for functioning use-cases: [use-cases screencast](http://www.youtube.com/watch?v=RfoDcXpfHlU)
 
 The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command:
 
