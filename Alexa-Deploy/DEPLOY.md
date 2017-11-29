@@ -38,7 +38,7 @@ The basic steps for testing all use cases involve -
 
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se1.PNG)
 
-3. Login and keep the JIRA board that we use for testing the use-cases 1&2 always open to see the changes happening. Please use AT board - [AT board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=1&selectedIssue=AT-33) for testing the use cases #1 & #2.
+3. Login and keep the JIRA board that we use for testing the use-cases 1&2 always open to see the changes happening. Please use AT board only - [AT board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=1&selectedIssue=AT-33) for testing the use cases #1 & #2.
 
 4. Login to google calendars for the users listed below in the table with their credentials to see the output after performing use-case #3.
 
@@ -97,7 +97,8 @@ After this sample utterance at echosim, we get the following output on echosim -
 Refresh the AT board and you will see that Story 2 with task AT-16 has been moved to state Done -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se5.PNG)
 
-2. The second type to test this use-case is that one need not say the entire command at one go. User can split is as -
+2. The second type to test this use-case is that one need not say the entire command at one go. User can split it as -
+
 Initial state of AT board -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se5.PNG)
 
@@ -114,7 +115,7 @@ Now, refresh the board and see its changed state -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se9.PNG)
 
 
-**Edge Cases** - Edge cases for use-case 1 would be providing invalid Task-ID or status , to which bot would respond saying that it is an invalid input. Sample response for invalid status -
+**Edge Cases** - Edge cases for use-case 1 would be providing invalid Task-ID or status, to which our Bot would respond saying that it is an invalid input. Sample response for invalid status -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se11.PNG)
 
 
@@ -130,7 +131,6 @@ This use-case has no edge cases considered and it provides summary of story poin
 #### Use Case #3 ->
 
 Use Case: Schedule a meeting for the team.
-
 
 We are using G Suite account - our domain being "ouruse.com" so to get access via Google calendar API. Scrumster schedules a meeting for team by taking the "date" as input. So, for testing our third use-case, follow these steps ->
 
@@ -148,9 +148,9 @@ iv) Scrumster checks all users' calendars for tomorrow - November 29th and picks
 And you can see this change reflected on the users' calendars as well. Now, after all the busy slots, a new slot has been booked for team meeting -
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se15.PNG)
 
-**NOTE** - Important thinsg to be Noted while testing ->
+**NOTE** - Important things to be Noted while testing ->
 * In our implementation of this meeting scheduling use-case for our project, we have pre-defined slots of 30mins which go from example 9:00 to 9:30am or 9:30 to 10:00am and not 9:05 to 9:35am.
-* The available slots would be only within 9am to 5pm and no timings excluding this period would be available to book meetings.
+* The available slots would be only within 9am to 5pm (Eastern Time) and no timings excluding this period would be available to book meetings.
 * Please log out of personal/other gmail account and use our "ourouse.com" domain only for testing this use-case.
 
 **Edge Case** - 
@@ -163,18 +163,11 @@ If a user tries to book a meeting after 5pm or before 9am or when all slots are 
  
  Utterance at echosim.io - "Ask Scrumster to schedule meeting tomorrow". Ouput -
  ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se17.PNG)
+ 
+ **Note** - For best results, testing can be done by using Amazon Echo device (Alexa) by linking it to our Amazon Developer account whose credentials have been given above.
 
+### Exploratory Testing and Code Inspection
+We have used JIRA REST APIs for all scrum board related activities and Google Calendar API for scheduling meeting service. We have not hard coded or used mock server. Extensive testing can be perfomed at echosim.io 
 
-
-
-
-
-
-
-
-
-login - all google accpunts listed above - see when users are free and try to schedule at that time. - show when no time matches - block 9-5 , - gives no output, tells could not schedule meeting (using only 9-5 EST eastern time -) - team's not free try another date - response, if block date deleted - gives output again. 
-
-
-### Worksheet
-The Worksheet for Milestone 4 (DEPLOY) can be found here: [Worksheet](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/WORKSHEET.md)
+### Task Tracking - Worksheet
+The Worksheet for Task Tracking for Milestone 4 (DEPLOY) can be found here: [Worksheet](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/WORKSHEET.md)
