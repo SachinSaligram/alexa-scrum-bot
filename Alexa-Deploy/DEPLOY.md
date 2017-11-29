@@ -129,7 +129,11 @@ Use Case: Schedule a meeting for the team.
 We are using G Suite account - our domain being "ouruse.com" so to get access via Google calendar API. Scrumster schedules a meeting for team by taking the "date" as input. So, for testing our third use-case, follow these steps ->
 
 `
-i) Login to Google Calendar [calendar](https://calendar.google.com/calendar/render) using all of these ouruse.com accounts - raghav@ouruse.com, sachin@ouruse.com, kshitija@ouruse.com, scrum@ouruse.com, vishal@ouruse.com. Password/credentials are provided in the table here - [credentials]()
+i) Login to Google Calendar [calendar](https://calendar.google.com/calendar/render) using all of these ouruse.com accounts - raghav@ouruse.com, sachin@ouruse.com, kshitija@ouruse.com, scrum@ouruse.com, vishal@ouruse.com. Password/credentials are provided in the table here - [credentials](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md#credential-information). 
+
+ii) Look at the currently blocked slots for all the users' Google Calendars. 
+
+iii) User utterance at echosim for scheduling meeting 
 
 
 
