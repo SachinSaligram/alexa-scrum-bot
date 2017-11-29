@@ -3,7 +3,8 @@
 ### Deployment
 
 #### Screencast
-Link to screencast for deployment: ()
+Link to screencast for deployment: [deployment screencast]()
+Link to screencast for functioning use-cases: [use-cases screencast]()
 
 The Deployment is carried out on a remote AWS environment and automated using Ansible. The Ansible playbook is run using the command:
 
@@ -131,9 +132,24 @@ We are using G Suite account - our domain being "ouruse.com" so to get access vi
 `
 i) Login to Google Calendar [calendar](https://calendar.google.com/calendar/render) using all of these ouruse.com accounts - raghav@ouruse.com, sachin@ouruse.com, kshitija@ouruse.com, scrum@ouruse.com, vishal@ouruse.com. Password/credentials are provided in the table here - [credentials](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md#credential-information). 
 
-ii) Look at the currently blocked slots for all the users' Google Calendars. 
+ii) Look at the currently blocked slots for all the users' Google Calendars. This is the current calendar for all users (when I was testing) -
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se12.PNG)
 
-iii) User utterance at echosim for scheduling meeting 
+iii) User utterance at echosim for scheduling meeting - "Ask Scrumster to schedule meeting tomorrow"
+
+iv) Scrumster checks all users' calendars for tomorrow - November 29th and picks up the first free 30-minute slot to book a team meeting. Output would look like ->
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se14.PNG)
+
+And you can see this change reflected on the users' calendars as well. Now, after all the busy slots, a new slot has been booked for team meeting -
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se15.PNG)
+
+**NOTE** - Important thinsg to be Noted while testing ->
+* In our implementation of this meeting scheduling use-case for our project, we have pre-defined slots of 30mins which go from example 9:00 to 9:30am or 9:30 to 10:00am and not 9:05 to 9:35am.
+* The available slots would be only within 9am to 5pm and no timings excluding this period would be available to book meetings.
+* Please log out of personal/other gmail account and use our "ourouse.com" domain only for testing this use-case.
+
+`
+
 
 
 
