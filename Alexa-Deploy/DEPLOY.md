@@ -35,6 +35,7 @@ The basic steps for testing all use cases involve -
 1. Login to [echosim.io](https://echosim.io/) using the credentials of Amazon Developer listed below in table (username: scrumuser2017@gmail.com & password: scrumster2017).
 
 2. Make sure the Console button on the echosim page is always ON so that output can be seen as well along with hearing the output. It would be present at the top-right of the page -
+
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se1.PNG)
 
 3. Login and keep the JIRA board that we use for testing the use-cases 1&2 always open to see the changes happening. Please use AT board - [AT board](https://scrumster.atlassian.net/secure/RapidBoard.jspa?rapidView=1&selectedIssue=AT-33) for testing the use cases #1 & #2.
@@ -73,7 +74,11 @@ User shall test by using any of the below given phrases -
 Task-ID can be any valid task-ID present on the Scrum Board - AT board and the task ID is mentioned at the bottom-right of all the tasks listed on the board in active sprint. Our current active sprint is - 'Sample Sprint 2' on AT board.
 
 Task-ID on a task -> example of task-ID here is 30 (if it is AT-16 or AT-30, we always mention on the number of the task to scrumster bot).
+
+
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se2.PNG)
+
+
 
 So, valid {status} that can be mentioned in the command can be one of these three - To Do, In Progress, Done.
 
