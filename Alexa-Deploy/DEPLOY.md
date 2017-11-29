@@ -62,48 +62,55 @@ Example for use-case 1 testing -
 Sample utterance at echosim - "Ask Scrumster to move task 16 to Done"
 
 State of AT board current sprint before this action is performed ->
-![img](se3)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se3.PNG)
 
 Here AT-16 - Story 2 is in 'To Do' state.
 
 After this sample utterance at echosim, we get the following output on echosim -
-![img](se4)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se4.PNG)
 
 Refresh the AT board and you will see that Story 2 with task AT-16 has been moved to state Done -
-![img](se5)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se5.PNG)
 
 2. The second type to test this use-case is that one need not say the entire command at one go. User can split is as -
 Initial state of AT board -
-![img](se5)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se5.PNG)
 
 User utterance - "Ask Scrumster to move task" - to which Scrumster asks -
-![img](se6)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se6.PNG)
 
 User utterance - "30"  - to which Scrumster shall respond as -
-![img](se7)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se7.PNG)
 
 User utterance - "In progress" - to which the final response shall be -
-![img](se8)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se8.PNG)
 
 Now, refresh the board and see its changed state -
-![img](se9)
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se9.PNG)
 
 
-**Edge Cases** - Edge cases for use-case 1 would be providing invalid Task-ID or status , to which bot would respond saying that it is an invalid input.
+**Edge Cases** - Edge cases for use-case 1 would be providing invalid Task-ID or status , to which bot would respond saying that it is an invalid input. Sample response for invalid status -
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se11.PNG)
 
 
 #### Use Case #2 ->
 
 Use Case: Sprint Summary and Feedback
 
+User sample utterance - "Ask Scrumster to provide summary for the current sprint" / "Ask Scrumster to provide current sprint summary."
 
-- testing use case 1,2,3 using echosim - explain
+This use-case has no edge cases considered and it provides summary of story points only for the current active sprint. As per our current AT board state (as shown last in use-case 1 example) the output would look like -
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se10.PNG)
 
-Ask scrumster to move task - task id - keep console open so that u can debug, - shows respons e(add screencast to show) - sample - one go, split asking to move task.
+#### Use Case #3 ->
 
-move task - inavlid task id - tells "sorry, task 1000 not found"
 
-same for sprint summary - direct - "ask scrumster to provide with current sprint summary" - no edge case
+
+
+
+
+
+
 
 login - all google accpunts listed above - see when users are free and try to schedule at that time. - show when no time matches - block 9-5 , - gives no output, tells could not schedule meeting (using only 9-5 EST eastern time -) - team's not free try another date - response, if block date deleted - gives output again. 
 #### Credential Information
