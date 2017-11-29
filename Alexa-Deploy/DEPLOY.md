@@ -129,7 +129,7 @@ Use Case: Schedule a meeting for the team.
 
 We are using G Suite account - our domain being "ouruse.com" so to get access via Google calendar API. Scrumster schedules a meeting for team by taking the "date" as input. So, for testing our third use-case, follow these steps ->
 
-`
+
 i) Login to Google Calendar [calendar](https://calendar.google.com/calendar/render) using all of these ouruse.com accounts - raghav@ouruse.com, sachin@ouruse.com, kshitija@ouruse.com, scrum@ouruse.com, vishal@ouruse.com. Password/credentials are provided in the table here - [credentials](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md#credential-information). 
 
 ii) Look at the currently blocked slots for all the users' Google Calendars. This is the current calendar for all users (when I was testing) -
@@ -148,7 +148,16 @@ And you can see this change reflected on the users' calendars as well. Now, afte
 * The available slots would be only within 9am to 5pm and no timings excluding this period would be available to book meetings.
 * Please log out of personal/other gmail account and use our "ourouse.com" domain only for testing this use-case.
 
-`
+**Edge Case** - 
+If a user tries to book a meeting after 5pm or before 9am or when all slots are full, the Scrumster will giev an error.
+ Example 1 -> Utterance at echosim.io - "Ask Scrumster to schedule meeting today". Now, since I am trying this after 5pm, it would say not possible -
+ ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se13.PNG)
+ 
+ Example 2 -> I will book a single user's calendar for Wednesday - 11/29 for entire day, and hence Scrumster will be unable to book any meeting for this date and say that team is not free on this date.
+ ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se16.PNG)
+ 
+ Utterance at echosim.io - "Ask Scrumster to schedule meeting tomorrow". Ouput -
+ ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se17.PNG)
 
 
 
