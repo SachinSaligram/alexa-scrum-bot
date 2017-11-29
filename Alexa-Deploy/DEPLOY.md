@@ -40,8 +40,20 @@ The basic steps for testing all use cases involve -
 
 4. Login to google calendars for the users listed below in the table with their credentials to see the output after performing use-case #3.
 
+**Note**- In all our use-cases, bot will be invoked by using 'Ask Scrumster' as initial part of commands.
 
 #### Use Case #1 ->
+
+Use Case: Move tasks from one state to another as per user input.
+User gives two inputs - 1) Task ID, 2) Status of task, and Scrumster shall move the task accordingly. This has been implemented by using the JIRA REST APIs. 
+
+User shall test by using any of the below given phrases - 
+1. "Ask Scrumster to move task {task-ID} to {status}". 
+
+Task-ID can be any valid task-ID present on the Scrum Board - AT board and the task ID is mentioned at the bottom-right of all the tasks listed on the board in active sprint. Our current active sprint is - 'Sample Sprint 2' on AT board.
+
+Task-ID ->
+![img]()
 
 
 
