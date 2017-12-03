@@ -54,7 +54,7 @@ __3. Use case #3__
 * Scrumster schedules a meeting for team by taking the "date" as input.
 * Scrumster checks all users' calendars and picks up the first free 30-minute slot to book a team meeting.
 
-For example - *"Ask Scrumster to schedule meeting tomorrow"*
+For example - *"Ask Scrumster to schedule a meeting tomorrow"*
 
 __Before Action__
 
@@ -64,15 +64,29 @@ __After Action__
 
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se15.PNG)
 
+### Development Process and Project
+
+For developing this application we used Jira, Google Calendar API from G-suite, AWS Lambda function, and AWS EC2 with Java-based spring REST service. Some of the most important points to note in the development process are listed below.
+
+* We chose to develop this application in Java over Node.js since our team had high fluency in Java. 
+* In developing the application for voice, we have been concerned with and focussed on latency since voice skills have to execute reliably and quickly. 
+* Spring-based REST service was used to perform any long-running task since lambda functions have limited resources. 
+* G-suite was used due to the fact it offers an easier and convenient way of integrating the Google Calendar API. 
+* We used cloud hosted Jira to reduce the overhead of maintaining different services.
+
+![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/images/architecture_diagram.png)
+
+In the deployment phase, we chose to automate the whole process with Ansible. The playbook creates a new EC2 instance, installs dependencies, pushes and builds the code, and runs the service. We faced the challenge of integrating the lambda function, which is relatively static, with a new instantiation of the Java service every time we spun a new virtual machine. In order to solve this issue, we made use of elastic IPs provided by Amazon. In our design, we have the same elastic IP assigned to the virtual machine every time we deploy the application which results in seamless integration with our lambda functions.
+
 ### Conclusion and Future Work
 
 In this project we were able to provide a service that we believe can 
-- provide value to any team in an organization that follows the Agile methodology
-- provide a seamless transition to a Agile environment
+* provide value to any team in an organization that follows the Agile methodology
+* provide a seamless transition to a Agile environment
 
-The service provides a reliable and consistent execution of tasks with it's implementation based of AWS Lambda, a custom server hosted on AWS EC2, and tight integration with JIRA and Google Calendar APIs. However, as a project that we believe has high scope in terms of development and usage, it requires refinement of current features and the addition of new use cases to truly evolve into an indispensable service. Hence, this service can aspire to
-- expand integration with agile and calendar services
-- create new sprints, tasks, epics, or stories
-- uniquely identify a user through voice to provide a more personalized (and secure) experience
-- provide more flexibility in terms of adding priority, assignees and notes, to name a few, to tasks. 
-- expand calendar functionality to provide more control over event details, room availability based on team size, addition/removal or attendees, and other modifications.
+The service provides a reliable and consistent execution of tasks with it's implementation based of AWS Lambda, a custom server hosted on AWS EC2 with Java-based spring REST service, and tight integration with JIRA, and Google Calendar APIs from G-suite. However, as a project that we believe has high scope in terms of development and usage, it requires refinement of current features and the addition of new use cases to truly evolve into an indispensable service. Hence, this service can aspire to
+* expand integration with agile and calendar services
+* create new sprints, tasks, epics, or stories
+* uniquely identify a user through voice to provide a more personalized (and secure) experience
+* provide more flexibility in terms of adding priority, assignees and notes, to name a few, to tasks. 
+* expand calendar functionality to provide more control over event details, room availability based on team size, addition/removal or attendees, and other modifications.
