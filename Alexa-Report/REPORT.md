@@ -1,5 +1,20 @@
 ## Project Report
 
+### Team Members
+
+* Kshitija Mohan Murudi (kmurudi)
+* Raghavendra Nayak Muddur (rmuddur)
+* Sachin Saligram (ssaligr)
+* Vishal Kumar Seshagirirao Anil (vseshag)
+
+### Previous Milestone Reports
+
+* Milestone 1: [DESIGN] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/DESIGN.md)
+* Milestone 2: [BOT] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Bot/BOT.md)
+* Milestone 3: [SERVICE] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/SERVICE.md)
+* Milestone 4: [DEPLOY] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md)
+* Milestone 5: [REPORT] (https://github.ncsu.edu/gverma/Azra_MeetingBot/tree/master/Milestone-5)
+
 ### Problem Statement
 
 Scrum is a subset of the Agile methodology in software development and it is extensively used today in organizations, big and small. It is known to increase productivity and it modularizes development in cycles of work called Sprints. A Sprint is usually 2-4 weeks long and is conducted using tools such as JIRA or Trello. As a part of scrum, the team conducts daily meetings called "stand-ups" to take updates from team members, and the scrum master conducts and manages these meetings throughout the course of the sprint. There are 3 roles as part of Scrum - Product Owner, Team and Scrum Master. The scrum master acts as the advocate for Scrum, and helps the team learn and apply Scrum to achieve business value.
