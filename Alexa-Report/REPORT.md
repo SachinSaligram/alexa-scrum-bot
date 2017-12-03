@@ -7,7 +7,7 @@
 * Sachin Saligram (ssaligr)
 * Vishal Kumar Seshagirirao Anil (vseshag)
 
-### Project Reports and Demonstration
+### Reports and Demonstration
 
 * [Design](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/DESIGN.md)
 * [Bot](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Bot/BOT.md)
