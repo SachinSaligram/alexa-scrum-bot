@@ -63,3 +63,16 @@ __Before Action__
 __After Action__
 
 ![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se15.PNG)
+
+### Conclusion and Future Work
+
+In this project we were able to provide a service that we believe can 
+- provide value to any team in an organization that follows the Agile methodology
+- provide a seamless transition to a Agile environment
+
+The service provides a reliable and consistent execution of tasks with it's implementation based of AWS Lambda, a custom server hosted on AWS EC2, and tight integration with JIRA and Google Calendar APIs. However, as a project that we believe has high scope in terms of development and usage, it requires refinement of current features and the addition of new use cases to truly evolve into an indispensable service. Hence, this service can aspire to
+- expand integration with agile and calendar services
+- create new sprints, tasks, epics, or stories
+- uniquely identify a user through voice to provide a more personalized (and secure) experience
+- provide more flexibility in terms of adding priority, assignees and notes, to name a few, to tasks. 
+- expand calendar functionality to provide more control over event details, room availability based on team size, addition/removal or attendees, and other modifications.
