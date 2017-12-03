@@ -20,7 +20,7 @@
 
 Scrum is a subset of the Agile methodology in software development and it is extensively used today in organizations, big and small. It is known to increase productivity and it modularizes development in cycles of work called Sprints. A Sprint is usually 2-4 weeks long and is conducted using tools such as JIRA or Trello. As a part of scrum, the team conducts daily meetings called "stand-ups" to take updates from team members, and the scrum master conducts and manages these meetings throughout the course of the sprint. There are 3 roles as part of Scrum - Product Owner, Team and Scrum Master. The scrum master acts as the advocate for Scrum, and helps the team learn and apply Scrum to achieve business value.
 
-The bot 'Scrumster' aims to free up manual time and effort that goes into coordinating and managing tasks within a scrum team. Our bot aims to make the scrum process more effective and easier to adopt by,
+The bot 'Scrumster' aims to free up manual time and effort that goes into coordinating and managing tasks within a scrum team. Our bot aims to make the scrum process more effective and easier to adopt by
 
 * automating tasks such as updates on the JIRA board or collecting updates from engineers.
 * easing the adoption of scrum by making the transition a less cumbersome task.
