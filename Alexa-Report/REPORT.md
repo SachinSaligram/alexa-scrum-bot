@@ -7,13 +7,15 @@
 * Sachin Saligram (ssaligr)
 * Vishal Kumar Seshagirirao Anil (vseshag)
 
-### Previous Milestone Reports
+### Milestone Reports and 
 
-* Milestone 1: [DESIGN] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/DESIGN.md)
-* Milestone 2: [BOT] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Bot/BOT.md)
-* Milestone 3: [SERVICE] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/SERVICE.md)
-* Milestone 4: [DEPLOY] (https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md)
-* Milestone 5: [REPORT] (https://github.ncsu.edu/gverma/Azra_MeetingBot/tree/master/Milestone-5)
+* [Design](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/DESIGN.md)
+* [Bot](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Bot/BOT.md)
+* [Service](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-service/SERVICE.md)
+* [Deploy](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/DEPLOY.md)
+* [Report](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Report/REPORT.md)
+
+* [Project Demo](https://youtu.be/g2zEf1eVQVE)
 
 ### Problem Statement
 
