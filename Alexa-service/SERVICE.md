@@ -23,7 +23,7 @@ In this milestone, we have implemented all the below listed components ->
 * Task Tracking -- WORKSHEET.md (20%)
 * Screencast (20%)
 
-For deploying our service, we have used Spring framework and the entire code is in Java and our Java service is deployed on AWS Lambda. We have implemented separate controllers to handle different use cases. To automate the backend service we have used JIRA REST APIs and Google Calendar API. Alexa is used as Scumster - doing the voice integration and we have defined the required Alexa skills so as the interpret the user's request and give required output.
+For deploying our service, we have used Spring framework and the entire code is in Java and our Java service is deployed on AWS Lambda. We have implemented separate controllers to handle different use cases. To automate the backend service we have used JIRA REST APIs and Google Calendar API. Alexa is used as Scrumster - doing the voice integration and we have defined the required Alexa skills so as to interpret the user's request and give required output.
 
 ## Screencast -
 
