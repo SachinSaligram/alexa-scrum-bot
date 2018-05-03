@@ -268,10 +268,10 @@ public class scrumster {
         List<Integer> time_slots = new ArrayList<>();
 
         ArrayList<String> users = new ArrayList<>();
-        users.add("raghav@ouruse.com");
-        users.add("sachin@ouruse.com");
-        users.add("kshitija@ouruse.com");
-        users.add("vishal@ouruse.com");
+        users.add("");
+        users.add("");
+        users.add("");
+        users.add("");
 
 
         //Obtain epoch times for all time slots
