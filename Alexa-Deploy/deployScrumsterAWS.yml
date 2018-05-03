@@ -64,10 +64,10 @@
 
   - name: git clone
     expect:
-      command: git clone https://github.ncsu.edu/rmuddur/Scrumster.git
+      command: git clone <repository>
       responses:
-        "Username for 'https://github.ncsu.edu':": "{{ vault['user'] }}"
-        "Password for 'https://kmurudi@github.ncsu.edu':": "{{ vault['password'] }}"
+        "Username for '<github address>':": "{{ vault['user'] }}"
+        "Password for '<username>':": "{{ vault['password'] }}"
 
   - name: Add Java repository
     apt_repository: repo='ppa:webupd8team/java' state=present update_cache=yes
