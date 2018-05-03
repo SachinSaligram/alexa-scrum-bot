@@ -50,11 +50,11 @@ For example - *"Ask Scrumster to move task 16 to Done"*
 
 __Before Action__
 
-![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se3.PNG)
+![img](https://github.com/SachinSaligram/alexa-scrum-bot/blob/master/Alexa-Deploy/se3.PNG)
 
 __After Action__
 
-![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se5.PNG)
+![img](https://github.com/SachinSaligram/alexa-scrum-bot/blob/master/Alexa-Deploy/se5.PNG)
 
 __2. Use case #2__
 
@@ -74,11 +74,11 @@ For example - *"Ask Scrumster to schedule a meeting tomorrow"*
 
 __Before Action__
 
-![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se12.PNG)
+![img](https://github.com/SachinSaligram/alexa-scrum-bot/blob/master/Alexa-Deploy/se12.PNG)
 
 __After Action__
 
-![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/Alexa-Deploy/se15.PNG)
+![img](https://github.com/SachinSaligram/alexa-scrum-bot/blob/master/Alexa-Deploy/se15.PNG)
 
 ### Development Process and Project
 
@@ -90,7 +90,7 @@ For developing this application we used Jira, Google Calendar API from G-suite, 
 * G-suite was used due to the fact it offers an easier and convenient way of integrating the Google Calendar API. 
 * We used cloud hosted Jira to reduce the overhead of maintaining different services.
 
-![img](https://github.ncsu.edu/rmuddur/Scrumster/blob/master/images/architecture_diagram.png)
+![img](https://github.com/SachinSaligram/alexa-scrum-bot/blob/master/images/architecture_diagram.png)
 
 In the deployment phase, we chose to automate the whole process with Ansible. The playbook creates a new EC2 instance, installs dependencies, pushes and builds the code, and runs the service. We faced the challenge of integrating the lambda function, which is relatively static, with a new instantiation of the Java service every time we spun a new virtual machine. In order to solve this issue, we made use of elastic IPs provided by Amazon. In our design, we have the same elastic IP assigned to the virtual machine every time we deploy the application which results in seamless integration with our lambda functions.
 
